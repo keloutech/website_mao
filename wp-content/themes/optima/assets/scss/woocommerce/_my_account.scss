@@ -1,0 +1,73 @@
+form.login{
+    .button{
+        padding: 10px 30px;
+        margin-right: 20px;
+    }
+    .clear + p.form-row {
+        margin-top: 10px;
+    }
+}
+
+.woocommerce-MyAccount-navigation{
+    ul{
+        list-style: none;
+        margin-left: 0;
+        padding-left: 0;
+    }
+    li{
+        display: inline-block;
+        padding: 0 30px 15px 0;
+        &.is-active{
+            a{
+                color: $primary-color;
+            }
+        }
+    }
+}
+
+.registration-form{
+    margin-bottom: 30px;
+    .form-row{
+        margin-bottom: 40px;
+    }
+    label{
+        display: none;
+    }
+    input{
+        border: none;
+        @include border-radius(2px);
+        font-size: 16px;
+        width: 100%;
+        color: #fff;
+    }
+    .input-text{
+        background-color: #134f8a;
+        padding: 15px 40px;
+        color: #487eb4;
+        &:focus{
+            color: #fff;
+        }
+    }
+    .button{
+        text-transform: capitalize;
+        background: $primary-color;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+}
+.registration-horizonal{
+    .registration-form{
+        margin: 0 -15px;
+        @extend %clearfix;
+        .form-row{
+            float: left;
+            width: 20%;
+            padding: 0 15px;
+            margin-bottom: 30px;
+        }
+        .form-row-wide{
+            float: left;
+            width: 40%;
+        }
+    }
+}

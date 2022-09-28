@@ -1,0 +1,57 @@
+.site-header{
+  .site-header-inner{
+    transition: all .3s ease;
+  }
+}
+.enable-header-sticky{
+  .site-header{
+    .site-header-inner{
+      width: 100%;
+    }
+    &.is-sticky{
+      .site-header-inner{
+        position: fixed;
+        width: 100%;
+        z-index: 10;
+        top: 0;
+        left: 0;
+        animation: header-active-sticky 400ms ease-in-out;
+        -webkit-animation: header-active-sticky 400ms ease-in-out;
+      }
+      .site-branding{
+        line-height: 100px;
+      }
+      .header-middle,
+      .header-right{
+        padding: 30px 0;
+      }
+    }
+  }
+}
+
+@keyframes header-active-sticky {
+  0% {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+  50%{
+    opacity: 1;
+  }
+  100%{
+    transform: translateY(0px);
+  }
+}
+
+
+@-webkit-keyframes header-active-sticky {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-50px);
+  }
+  50%{
+    opacity: 1;
+  }
+  100%{
+    -webkit-transform: translateY(0px);
+  }
+}

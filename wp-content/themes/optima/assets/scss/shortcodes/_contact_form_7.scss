@@ -1,0 +1,415 @@
+.la-contact-info{
+  .la-contact-item{
+    padding-#{$global-left}: 50px;
+    position: relative;
+    margin-bottom: 10px;
+    &:before{
+      font-family: FontAwesome;
+      position: absolute;
+      #{$global-left}: 0;
+    }
+  }
+  .la-contact-phone{
+    &:before{
+      content: "\f095";
+    }
+  }
+  .la-contact-email{
+    &:before{
+      content: "\f0e0";
+    }
+  }
+  .la-contact-address{
+    &:before{
+      content: "\f041";
+    }
+  }
+  &.inline-item{
+    .la-contact-item{
+      padding-left: 30px;
+      display: inline-block;
+      margin: 0 20px 0;
+    }
+  }
+}
+.wpcf7-response-output {
+  font-size: 12px;
+}
+.wpcf7-form-control-wrap{
+  margin-bottom: 30px;
+  &,
+  .wpcf7-form-control{
+    display: block;
+    width: 100%;
+  }
+  .wpcf7-not-valid-tip{
+    font-size: 12px;
+  }
+  .wpcf7-select,
+  .wpcf7-text,
+  .wpcf7-textarea{
+    padding: 12px 30px;
+  }
+  .wpcf7-select{
+    height: 54px;
+  }
+}
+
+.wpcf7-form .contact-form label {
+  padding-bottom: 10px;
+  display: block;
+}
+
+
+.contact-form-style-default{
+  .wpcf7-form-control-wrap{
+    margin-bottom: 20px;
+    .wpcf7-form-control {
+      text-transform: uppercase;
+      font-size: 12px;
+      color: $heading-color;
+      font-family: $heading-font-family;
+      line-height: 22px;
+      padding: 15px 30px;
+    }
+  }
+}
+
+.contact-form-style-01{
+  label {
+    color: $three-color;
+  }
+  .wpcf7-form-control-wrap{
+    .wpcf7-textarea,
+    .wpcf7-text{
+      color: $secondary-color;
+      padding: 10px 0;
+      border-width: 0 0 1px;
+    }
+  }
+}
+.contact-form-style-02{
+  .wpcf7-form-control-wrap{
+    .wpcf7-select,
+    .wpcf7-textarea,
+    .wpcf7-text{
+      color: #8a8a8a;
+      background-color: rgba(#232324, 0.6);
+      border-color: rgba(#8a8a8a, 0.3 );
+      @include border-radius(2px);
+      &:focus{
+        color: #fff;
+        + i{
+          color: #fff;
+        }
+      }
+    }
+    i{
+      position: absolute;
+      right: 20px;
+      line-height: 30px;
+      top: 10px;
+      color: #8a8a8a;
+    }
+  }
+  .wpcf7-submit{
+    @include border-radius(2px);
+  }
+  .col-xs-12{
+    > i{
+      display: none;
+    }
+  }
+}
+.contact-form-style-03{
+  .wpcf7-form-control-wrap{
+    margin-bottom: 10px;
+    .wpcf7-select,
+    .wpcf7-text,
+    .wpcf7-textarea{
+      padding: 14px 30px;
+      font-size: 12px;
+      line-height: 20px;
+      &:focus{
+        border-color: $primary-color;
+      }
+    }
+    .wpcf7-select{
+      height: 50px;
+    }
+  }
+  .row {
+    margin-left: -10px;
+    margin-right: -10px;
+    .col-xs-12{
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  }
+  .wpcf7-submit{
+    margin-top: 10px;
+    background-color: #26314a;
+    color: #fff;
+    border-color: #26314a;
+    &:hover{
+      color: #fff;
+      background-color: $primary-color;
+      border-color: $primary-color;
+    }
+  }
+}
+
+.contact-form-style-04{
+  .wpcf7-form-control-wrap{
+    margin-bottom: 20px;
+    .wpcf7-select,
+    .wpcf7-text,
+    .wpcf7-textarea{
+      background-color: rgba(#f4f6f7, 0.5);
+      padding: 14px 30px;
+      line-height: 20px;
+      @include border-radius(2px);
+    }
+    .wpcf7-select{
+      height: 50px;
+    }
+  }
+  .row {
+    margin-left: -10px;
+    margin-right: -10px;
+    .col-xs-12{
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  }
+}
+
+
+.newsletter-form1{
+  background: $primary-color;
+  color: #fff;
+  width: 470px;
+  margin: 5px auto;
+  max-width: 100%;
+  padding: 10px 20px;
+  position: relative;
+  @include border-radius(40px);
+  button,
+  input{
+    background: transparent;
+    border: none;
+    color: inherit;
+  }
+  input{
+    font-weight: 300;
+    width: 100%;
+    line-height: 30px;
+    padding: 10px 50px 10px 30px;
+  }
+  input:-webkit-autofill{
+    &,
+    &:focus{
+      -webkit-box-shadow: 0 0 0 1000px $primary-color inset;
+      -webkit-text-fill-color: #fff;
+    }
+  }
+  > i{
+    position: absolute;
+    left: 20px;
+    top: 18px;
+    line-height: 30px;
+  }
+  button{
+    position: absolute;
+    right: 0;
+    top: 25px;
+    padding: 0 25px 0 25px;
+    line-height: 20px;
+    border-left: 1px solid rgba(255,255,255,0.5);
+    font-size: 16px;
+    font-weight: 300;
+    vertical-align: middle;
+    i {
+      vertical-align: middle;
+      font-size: 10px;
+      padding-left: 10px;
+      margin-top: -2px;
+    }
+  }
+}
+
+.mc4wp-response{
+  margin-top: 15px;
+}
+
+.yikes-mailchimp-container{
+  .edit-link{
+    display: none;
+  }
+}
+
+.la-newsletter-popup {
+  display: none;
+  max-width: 620px;
+  margin: 0 auto;
+  padding-top: 100px;
+  color: #343538;
+  text-align: center;
+  p{
+    color: #8a8a8a !important;
+    font-size: 16px;
+    max-width: 480px;
+    padding: 5px 0 15px;
+    margin: 0 auto 15px;
+  }
+  #lightcase-case & {
+    display: block;
+  }
+}
+.font-size-40{
+  font-size: 40px;
+}
+.open-newsletter-popup{
+  .lightcase-inlineWrap{
+    background: {
+      image : url(../images/newsletter-popup-bg.jpg);
+      color: #fff;
+      position: center top;
+      repeat: no-repeat;
+    }
+  }
+  #lightcase-case #lightcase-content{
+    overflow: visible;
+  }
+  .btn-close-newsletter-popup {
+    position: absolute;
+    top: -15px;
+    color: #fff;
+    right: -20px;
+    width: 20px;
+  }
+}
+
+.la-infinite-loading {
+  clear: both;
+  width: 100px;
+  margin: 0 auto;
+}
+.yikes-mailchimp-container .yikes-easy-mc-success-message {
+  padding: 0;
+  background: none;
+  margin-bottom: 0;
+}
+
+.subscribe-style-01{
+  .yikes-easy-mc-form{
+    @include clearfix;
+    background-color: #fff;
+    position: relative;
+    label{
+      margin-bottom: 0;
+      span{
+        display: none;
+      }
+    }
+    .yikes-easy-mc-email{
+      background: #fff;
+      border: none;
+      outline: none !important;
+      width: 100%;
+      line-height: 30px;
+      padding: 15px 140px 15px 30px;
+      margin: 0;
+      color: $three-color;
+      &:-webkit-autofill{
+        &,
+        &:focus{
+          -webkit-box-shadow: 0 0 0 1000px #fff inset;
+          -webkit-text-fill-color: #000000;
+        }
+      }
+      &:focus{
+        color: $secondary-color;
+      }
+    }
+    .yikes-easy-mc-submit-button{
+      border: none;
+      margin: 0 !important;
+      width: 140px;
+      padding: 15px 0;
+      line-height: 30px;
+      background-color: transparent;
+      color: $secondary-color;
+      font-weight: 600;
+      position: absolute;
+      right: 0;
+      top: 0;
+      letter-spacing: 2px;
+      &:hover{
+        color: $primary-color;
+      }
+    }
+  }
+}
+
+.subscribe-style-02{
+  .yikes-easy-mc-success-message{
+    text-align: center;
+    color: #fff;
+  }
+  .yikes-easy-mc-form{
+    @include clearfix;
+    position: relative;
+    border-bottom: 1px solid rgba(#ffffff,0.5);
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    label{
+      margin-bottom: 0;
+      span{
+        display: none;
+      }
+    }
+    .yikes-easy-mc-email{
+      background: transparent;
+      border: none;
+      outline: none !important;
+      width: 100%;
+      line-height: 30px;
+      padding: 10px 100px 10px 0px;
+      margin: 0;
+      color: #fff;
+      font-style: italic;
+      &:-webkit-autofill{
+        &,
+        &:focus{
+          -webkit-box-shadow: 0 0 0 1000px #fff inset;
+          -webkit-text-fill-color: #000000;
+        }
+      }
+    }
+    .yikes-easy-mc-submit-button{
+      border: none;
+      margin: 0 !important;
+      width: auto;
+      padding: 0;
+      line-height: 30px;
+      background-color: transparent;
+      color: #fff;
+      font-weight: 600;
+      position: absolute;
+      right: 0;
+      top: 5px;
+      letter-spacing: 1px;
+      &:hover{
+        color: $primary-color;
+        background: transparent;
+      }
+    }
+  }
+}
+
+.contact-form-style-01 .text-right .ajax-loader {
+  position: absolute;
+  bottom: 0;
+}

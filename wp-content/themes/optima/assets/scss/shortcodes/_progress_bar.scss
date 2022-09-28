@@ -1,0 +1,66 @@
+.vc_progress_bar{
+	@extend %clearfix;
+	.vc_general.vc_single_bar{
+		float: left;
+		width: 100%;
+		height: 5px;
+		margin-bottom: 24px;
+		margin-top: 30px;
+		@include box-shadow(none);
+		.vc_bar{
+			@extend %radius-0;
+		}
+		.vc_label{
+			position: absolute;
+			padding: 0;
+			left: 0;
+			width: 100%;
+			top: -30px;
+			font-size: 12px;
+			color: inherit;
+			text-shadow: none;
+			@extend %heading-font-family;
+		}
+		.vc_label_units{
+			opacity: 0;
+			white-space: pre;
+			position: absolute;
+			left: 0;
+			margin-left: -10px;
+			@include transition(left 1s linear);
+		}
+	}
+}
+
+.la-circle-progress{
+	text-align: center;
+	min-width: 100px;
+	canvas{
+		vertical-align: middle;
+		max-width: 100%;
+	}
+	.la-circle-wrap{
+		position: relative;
+		display: inline-block;
+		margin: 0 auto;
+	}
+	.la-circle-wrapper{
+		width: 100%;
+		@extend %absolute-center;
+	}
+	.sc-cp-t,
+	.sc-cp-v{
+		display: block;
+		line-height: 100%;
+	}
+	&.la-progress-2{
+		font-weight: 300;
+		.sc-cp-v{
+			font-size: 52px;
+		}
+		.sc-cp-t{
+			font-size: 26px;
+			margin-top: 25px;
+		}
+	}
+}

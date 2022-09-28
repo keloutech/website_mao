@@ -1,0 +1,200 @@
+.portfolio-single-page{
+  .entry-tax-list {
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 10px;
+    color: $heading-color;
+    @extend %heading-font-family;
+  }
+  .pf-gal-items{
+    .gal-item{
+      margin-bottom: 30px;
+      img{
+        width: 100%;
+      }
+    }
+  }
+  .portfolio-social-links{
+    .social--sharing{
+      a{
+        width: 26px;
+        height: 26px;
+        line-height: 26px;
+        margin: 0 5px;
+        font-size: 14px;
+        @include border-radius(50%);
+      }
+    }
+  }
+  .portfolio-meta-data{
+    .meta-item{
+      display: block;
+      margin: 20px 0;
+      span{
+        display: inline-block;
+        vertical-align: middle;
+        line-height: inherit;
+      }
+      [class*="optima-icon"]{
+        color: $heading-color;
+        width: 30px;
+      }
+    }
+    &.inline-meta{
+      .meta-item{
+        display: inline-block;
+        margin: 0;
+        + .meta-item{
+          margin-left: 20px;
+        }
+      }
+    }
+  }
+  .pf-title{
+    margin-top: 0;
+  }
+  &.style-1{
+    .portfolio-social-links{
+      padding-top: 30px;
+    }
+  }
+  &.style-2{
+    .pf-gal-items {
+      margin-bottom: 25px;
+    }
+    .portfolio-meta-data{
+      float: left;
+    }
+    .portfolio-social-links{
+      float: right;
+    }
+    .portfolio-meta-datawrap {
+      margin-bottom: 50px;
+    }
+  }
+  &.style-3{
+    .pf-gal-items{
+      margin-left: -5px;
+      margin-right: -5px;
+      margin-bottom: 30px;
+      overflow: hidden;
+      .gal-item{
+        float: left;
+        width: 50%;
+        padding: 5px;
+        margin: 0;
+        &.large-gi{
+          width: 100%;
+        }
+      }
+    }
+    .portfolio-meta-datawrap{
+      .portfolio-meta-data{
+        .meta-icon-client{
+          background-image: url(assets/images/users-color_circle-09.png);
+        }
+        .meta-icon-timeline{
+          background-image: url(assets/images/ui-color-1_calendar-check-59.png);
+        }
+        .meta-icon-location{
+          background-image: url(assets/images/location-color_flag-triangle.png);
+        }
+        .meta-icon-website{
+          background-image: url(assets/images/objects-color_anchor.png);
+        }
+        .meta-item{
+          border: 1px solid $border-color;
+          display: block;
+          margin: 0 0 20px;
+          > div{
+            display: table-cell;
+          }
+          .meta-icon{
+            width: 90px;
+            background-position: center center;
+            background-repeat: no-repeat;
+          }
+        }
+        .meta-info{
+          padding: 30px 0;
+          > span{
+            display: block;
+            line-height: normal;
+            color: $heading-color;
+            &:first-child{
+              color: inherit;
+            }
+          }
+        }
+      }
+    }
+    .pf-additional-bottom{
+      background: url(assets/images/port-s-03-bg.jpg) no-repeat 0 0;
+      background-size: cover;
+      padding: 70px 20px 50px;
+      margin-top: 20px;
+      .wpb_content_element{
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+  &.style-4{
+    .portfolio-meta-data{
+      margin-bottom: 20px;
+    }
+    .portfolio-social-links label {
+      padding-bottom: 10px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 14px;
+      display: block;
+      color: $heading-color;
+    }
+  }
+  &.style-5{
+    .portfolio-meta-data{
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.portfolio-nav {
+  text-align: center;
+  background: #f7f7f7;
+  a{
+    display: block;
+    font-size: 30px;
+    padding: 20px;
+    &:hover{
+      color: inherit;
+      background-color: #eeeeee;
+    }
+  }
+  [class*="optima-icon-"]{
+    line-height: inherit;
+    display: inherit;
+  }
+}
+
+.wpb_gallery .wpb_flexslider .flex-control-paging {
+  bottom: 0;
+  margin-top: 0;
+  top: auto;
+}
+.wpb_gallery .flexslider{
+  border: none;
+  border-radius: 0;
+  margin: 0;
+}
+.wpb_gallery .flex-control-paging li a{
+  background: none;
+  border: 1px solid #fff;
+  &.flex-active{
+    background: #fff;
+  }
+}
+.wpb_gallery .wpb_image_grid .wpb_image_grid_ul .isotope-item{
+  margin: 0;
+}

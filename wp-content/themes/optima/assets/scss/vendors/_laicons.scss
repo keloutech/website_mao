@@ -1,0 +1,155 @@
+@font-face {
+  font-family: "optima";
+  src:url("assets/fonts/optima.eot");
+  src:url("assets/fonts/optima.eot?#iefix") format("embedded-opentype"),
+  url("assets/fonts/optima.woff") format("woff"),
+  url("assets/fonts/optima.ttf") format("truetype"),
+  url("assets/fonts/optima.svg#optima") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+[data-icon]:before {
+  font-family: "optima" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: inherit;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+[class*="ult-vid-cntrl"],
+[class*="fa-"] {
+  font-family: FontAwesome;
+  font-size:inherit;
+  line-height: inherit;
+  text-rendering:auto;
+  display: inline-block;
+  font-style: normal;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale
+}
+
+[class*="optima-icon-"]{
+  @extend %la-icons;
+}
+.optima-icon-menu:before {
+  content: "\61";
+}
+.optima-icon-zoom:before {
+  content: "\62";
+}
+.optima-icon-cart-modern:before {
+  content: "\63";
+}
+.optima-icon-heart:before {
+  content: "\64";
+}
+.optima-icon-star:before {
+  content: "\65";
+}
+.optima-icon-star-empty:before {
+  content: "\66";
+}
+.optima-icon-link:before {
+  content: "\67";
+}
+.optima-icon-arrows-minimal-left:before {
+  content: "\68";
+}
+.optima-icon-arrows-minimal-right:before {
+  content: "\69";
+}
+.optima-icon-quote-bottom:before {
+  content: "\6a";
+}
+.ult-vid-cntrlplay:before {
+  content: "\f04b";
+}
+.ult-vid-cntrlpause:before {
+  content: "\f04c";
+}
+.optima-icon-building:before {
+  content: "\6b";
+}
+.optima-icon-board-27:before {
+  content: "\6c";
+}
+.optima-icon-bulb-63:before {
+  content: "\6d";
+}
+.optima-icon-animation:before {
+  content: "\6e";
+}
+.optima-icon-mobile-dev:before {
+  content: "\6f";
+}
+.optima-icon-compass:before {
+  content: "\70";
+}
+.optima-icon-switch:before {
+  content: "\71";
+}
+.optima-icon-tail-right:before {
+  content: "\72";
+}
+.optima-icon-tail-left:before {
+  content: "\73";
+}
+.optima-icon-cart-2:before {
+  content: "\74";
+}
+.optima-icon-cart-plus:before {
+  content: "\75";
+}
+.optima-icon-cart-arrow-down:before {
+  content: "\76";
+}
+.optima-icon-bag:before {
+  content: "\77";
+}
+.optima-icon-close-round:before {
+  content: "\78";
+}
+.optima-icon-cart-add:before {
+  content: "\79";
+}
+.optima-icon-quote:before {
+  content: "\7a";
+}
+.optima-icon-simple-close:before {
+  content: "\41";
+}
+.optima-icon-tail-triangle-down:before {
+  content: "\43";
+}
+.optima-icon-tail-triangle-up:before {
+  content: "\42";
+}
+.optima-icon-link2:before {
+  content: "\44";
+}
+.optima-icon-users-circle:before {
+  content: "\45";
+}
+.optima-icon-flag:before {
+  content: "\46";
+}
+.optima-icon-ui-calendar:before {
+  content: "\47";
+}
+.optima-icon-grid-outline:before {
+  content: "\48";
+}
+.optima-icon-zoom-in:before {
+  content: "\49";
+}
+.optima-icon-cart-modern-in:before {
+  content: "\4a";
+}
+.optima-icon-card-edit:before {
+  content: "\4b";
+}

@@ -1,0 +1,122 @@
+.footer-column{
+  float: left;
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  min-height: 1px;
+  .widget{
+    label{
+      span.EMAIL-label {
+        display: none;
+      }
+      .yikes-easy-mc-email{
+        border-width: 1px;
+        border-color: inherit;
+        background-color: transparent;
+        color: inherit;
+      }
+    }
+    .yikes-easy-mc-form{
+      .yikes-easy-mc-submit-button{
+        color: inherit;
+      }
+    }
+  }
+}
+
+.enable-footer-fullwidth{
+  .site-footer{
+    .container{
+      width: 100%;
+    }
+  }
+}
+.site-footer{
+  background-color: $footer-background-color;
+  color: $footer-text-color;
+  a{
+    color: $footer-link-color;
+    &:hover{
+      color: $footer-link-hover-color;
+    }
+  }
+  .widget{
+    margin-bottom: 35px;
+    .widget-title{
+      color: $footer-heading-color;
+      margin: 0 0 40px;
+    }
+  }
+  .menu li {
+    margin-bottom: 14px;
+    ul{
+      display: none;
+    }
+  }
+  .menu-half-col{
+    .menu li {
+      width: 49%;
+      display: inline-block;
+    }
+  }
+  .menu-inline-item{
+    .menu li {
+      display: inline-block;
+      margin: 0 15px;
+    }
+  }
+}
+.footer-top{
+  padding: 70px 0 15px;
+}
+.footer-bottom{
+  line-height: 30px;
+  background-color: #000;
+  .footer-bottom-inner{
+    padding: 10px 0;
+  }
+}
+
+
+.la-footer-2col48{
+  .footer-bottom{
+    background-color: transparent;
+  }
+  .footer-bottom-inner{
+    border-top: 1px solid rgba(#48494e, 0.3);
+  }
+  .footer-top {
+    padding: 65px 0 45px;
+  }
+  .footer-column-1{
+    width: percentage(4/12);
+  }
+  .footer-column-2{
+    width: percentage(8/12);
+  }
+  .widget{
+    margin-bottom: 0;
+  }
+  .widget_nav_menu{
+    margin-top: 20px;
+  }
+}
+.la-footer-2col66{
+  .footer-column{
+    width: percentage(6/12);
+  }
+  .footer-top{
+    padding-top: 20px;
+    border-top: 1px solid;
+  }
+}
+.la-footer-3col444{
+  .footer-column{
+    width: percentage(4/12);
+  }
+}
+.la-footer-4col3333{
+  .footer-column{
+    width: percentage(3/12);
+  }
+}

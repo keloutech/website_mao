@@ -1,0 +1,2468 @@
+@function print_var($var){
+  @return #{$var};
+}
+/*--------------------------------------------------------------
+	 @Package: Optima SASS
+	 @File: scss/_wp.scss
+---------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+	 @Package: Optima SASS
+	 @File: scss/_settings-default.scss
+---------------------------------------------------------------*/
+
+$primary-color: print_var('<?php echo esc_attr( Optima()->settings->get("primary_color","#526df9") ) ?>');
+$secondary-color: print_var('<?php echo esc_attr( Optima()->settings->get("secondary_color","#232324") ) ?>');
+
+$success-color: green;
+$warning-color: #2635c4;
+$alert-color: #F3E538;
+
+$three-color: print_var('<?php echo esc_attr( Optima()->settings->get("three_color","#b5b7c4") ) ?>');
+$border-color: print_var('<?php echo esc_attr( Optima()->settings->get("border_color","rgba(169,174,189,0.30)") ) ?>');
+$heading-color: print_var('<?php echo esc_attr( Optima()->settings->get("heading_color","#343538") ) ?>');
+
+$button-color: $secondary-color;
+
+//$body-background-color: print_var('<?php echo ( $body_background_color ) ?>');
+$body-font-color: print_var('<?php echo esc_attr( Optima()->settings->get("text_color","#8a8a8a") ) ?>');
+
+$body-font-family: print_var('<?php echo ( $body_font_family ) ?>');
+$heading-font-family: print_var('<?php echo ( $heading_font_family ) ?>');
+$highlight-font-family: print_var('<?php echo ( $highlight_font_family ) ?>');
+
+$header-top-background-color: print_var('<?php echo esc_attr( Optima()->settings->get("header_top_background_color","rgba(0,0,0,0)") ) ?>');
+$header-top-text-color: print_var('<?php echo esc_attr( Optima()->settings->get("header_top_text_color","rgba(255,255,255,0.2)") ) ?>');
+$header-top-link-color: print_var('<?php echo esc_attr( Optima()->settings->get("header_top_link_color","#fff") ) ?>');
+$header-top-link-hover-color: print_var('<?php echo esc_attr( Optima()->settings->get("header_top_link_hover_color","#526df9") ) ?>');
+
+//$header-background-color: print_var('<?php echo ($header_background_color) ?>');
+$header-text-color: print_var('<?php echo esc_attr( Optima()->settings->get("header_text_color","#343538") ) ?>');
+$header-link-color: print_var('<?php echo esc_attr( Optima()->settings->get("header_link_color","#343538") ) ?>');
+$header-link-hover-color: print_var('<?php echo esc_attr( Optima()->settings->get("header_link_hover_color","#526df9") ) ?>');
+
+$menu-lv-1-color: print_var('<?php echo esc_attr( Optima()->settings->get("mm_lv_1_color","#303744") ) ?>');
+$menu-lv-1-bg-color: print_var('<?php echo esc_attr( Optima()->settings->get("mm_lv_1_bg_color","rgba(0,0,0,0)") ) ?>');
+$menu-lv-1-hover-color: print_var('<?php echo esc_attr( Optima()->settings->get("mm_lv_1_hover_color","#303744") ) ?>');
+$menu-lv-1-hover-bg-color: print_var('<?php echo esc_attr( Optima()->settings->get("mm_lv_1_hover_bg_color","rgba(0,0,0,0)") ) ?>');
+
+//$header-transparency-background-color: print_var('<?php echo ($header_transparency_background_color) ?>');
+$header-transparency-text-color: print_var('<?php echo esc_attr( Optima()->settings->get("transparency_header_text_color","#fff") ) ?>');
+$header-transparency-link-color: print_var('<?php echo esc_attr( Optima()->settings->get("transparency_header_link_color","#fff") ) ?>');
+$header-transparency-link-hover-color: print_var('<?php echo esc_attr( Optima()->settings->get("transparency_header_link_hover_color","#526df9") ) ?>');
+$header-transparency-menu-lv-1-color: print_var('<?php echo esc_attr( Optima()->settings->get("transparency_mm_lv_1_color","#fff") ) ?>');
+$header-transparency-menu-lv-1-bg-color: print_var('<?php echo esc_attr( Optima()->settings->get("transparency_mm_lv_1_bg_color","rgba(0,0,0,0)") ) ?>');
+$header-transparency-menu-lv-1-hover-color: print_var('<?php echo esc_attr( Optima()->settings->get("transparency_mm_lv_1_hover_color","rgba(0,0,0,0)") ) ?>');
+$header-transparency-menu-lv-1-hover-bg-color: print_var('<?php echo esc_attr( Optima()->settings->get("transparency_mm_lv_1_hover_bg_color","rgba(0,0,0,0)") ) ?>');
+
+$menu-dropdown-bg-color: print_var('<?php echo esc_attr( Optima()->settings->get("mm_dropdown_bg","#fff") ) ?>');
+$menu-dropdown-link-color: print_var('<?php echo esc_attr( Optima()->settings->get("mm_dropdown_link_color","#696c75") ) ?>');
+$menu-dropdown-link-bg-color: print_var('<?php echo esc_attr( Optima()->settings->get("mm_dropdown_link_bg","rgba(0,0,0,0)") ) ?>');
+$menu-dropdown-link-active-color: print_var('<?php echo esc_attr( Optima()->settings->get("mm_dropdown_link_hover_color","#252634") ) ?>');
+$menu-dropdown-link-active-bg-color: print_var('<?php echo esc_attr( Optima()->settings->get("mm_dropdown_link_hover_bg","rgba(0,0,0,0)") ) ?>');
+$menu-dropdown-link-hover-color: print_var('<?php echo esc_attr( Optima()->settings->get("mm_dropdown_link_hover_color","#252634") ) ?>');
+$menu-dropdown-link-hover-bg-color: print_var('<?php echo esc_attr( Optima()->settings->get("mm_dropdown_link_hover_bg","rgba(0,0,0,0)") ) ?>');
+
+$menu-wide-bg-color: print_var('<?php echo esc_attr( Optima()->settings->get("mm_wide_dropdown_bg","#fff") ) ?>');
+$menu-wide-heading-color: print_var('<?php echo esc_attr( Optima()->settings->get("mm_wide_dropdown_heading_color","#252634") ) ?>');
+$menu-wide-link-color: print_var('<?php echo esc_attr( Optima()->settings->get("mm_wide_dropdown_link_color","#252634") ) ?>');
+$menu-wide-link-bg-color: print_var('<?php echo esc_attr( Optima()->settings->get("mm_wide_dropdown_link_bg","rgba(0,0,0,0)") ) ?>');
+$menu-wide-link-hover-color: print_var('<?php echo esc_attr( Optima()->settings->get("mm_wide_dropdown_link_hover_color","#252634") ) ?>');
+$menu-wide-link-hover-bg-color: print_var('<?php echo esc_attr( Optima()->settings->get("mm_wide_dropdown_link_hover_bg","rgba(0,0,0,0)") ) ?>');
+
+$aside-background-color: print_var('<?php echo esc_attr( Optima()->settings->get("offcanvas_background","#fff") ) ?>');
+$aside-text-color: print_var('<?php echo esc_attr( Optima()->settings->get("offcanvas_text_color","#8a8a8a") ) ?>');
+$aside-heading-color: print_var('<?php echo esc_attr( Optima()->settings->get("offcanvas_heading_color","#232324") ) ?>');
+$aside-link-color: print_var('<?php echo esc_attr( Optima()->settings->get("offcanvas_link_color","#232324") ) ?>');
+$aside-link-hover-color: print_var('<?php echo esc_attr( Optima()->settings->get("offcanvas_link_hover_color","#526df9") ) ?>');
+
+
+$header-mb-background-color: print_var('<?php echo esc_attr( Optima()->settings->get("header_mb_background","#fff") ) ?>');
+$header-mb-text-color: print_var('<?php echo esc_attr( Optima()->settings->get("header_mb_text_color","#232324") ) ?>');
+$header-mb-link-color: print_var('<?php echo esc_attr( Optima()->settings->get("header_mb_link_color","#232324") ) ?>');
+
+$mobile-menu-bg-color: print_var('<?php echo esc_attr( Optima()->settings->get("mb_background","#fff") ) ?>');
+$mobile-menu-lv-1-color: print_var('<?php echo esc_attr( Optima()->settings->get("mb_lv_1_color","#252634") ) ?>');
+$mobile-menu-lv-1-bg-color: print_var('<?php echo esc_attr( Optima()->settings->get("mb_lv_1_bg_color","rgba(0,0,0,0)") ) ?>');
+$mobile-menu-lv-1-hover-color: print_var('<?php echo esc_attr( Optima()->settings->get("mb_lv_1_hover_color","#fff") ) ?>');
+$mobile-menu-lv-1-hover-bg-color: print_var('<?php echo esc_attr( Optima()->settings->get("mb_lv_1_hover_bg_color","#2635c4") ) ?>');
+$mobile-menu-lv-2-color: print_var('<?php echo esc_attr( Optima()->settings->get("mb_lv_2_color","#252634") ) ?>');
+$mobile-menu-lv-2-bg-color: print_var('<?php echo esc_attr( Optima()->settings->get("mb_lv_2_bg_color","rgba(0,0,0,0)") ) ?>');
+$mobile-menu-lv-2-hover-color: print_var('<?php echo esc_attr( Optima()->settings->get("mb_lv_2_hover_color","#fff") ) ?>');
+$mobile-menu-lv-2-hover-bg-color: print_var('<?php echo esc_attr( Optima()->settings->get("mb_lv_2_hover_bg_color","#2635c4") ) ?>');
+
+
+//$footer-background-color: print_var('<?php echo ($footer_background_color) ?>');
+$footer-text-color: print_var('<?php echo esc_attr( Optima()->settings->get("footer_text_color","#8a8a8a") ) ?>');
+$footer-heading-color: print_var('<?php echo esc_attr( Optima()->settings->get("footer_heading_color","#fff") ) ?>');
+$footer-link-color: print_var('<?php echo esc_attr( Optima()->settings->get("footer_link_color","#8a8a8a") ) ?>');
+$footer-link-hover-color: print_var('<?php echo esc_attr( Optima()->settings->get("footer_link_hover_color","#526df9") ) ?>');
+
+$footer-copyright-background-color: print_var('<?php echo esc_attr( Optima()->settings->get("footer_copyright_background_color","#8a8a8a") ) ?>');
+$footer-copyright-text-color: print_var('<?php echo esc_attr( Optima()->settings->get("footer_copyright_text_color","#8a8a8a") ) ?>');
+$footer-copyright-link-color: print_var('<?php echo esc_attr( Optima()->settings->get("footer_copyright_link_color","#8a8a8a") ) ?>');
+$footer-copyright-link-hover-color: print_var('<?php echo esc_attr( Optima()->settings->get("footer_copyright_link_hover_color","#8a8a8a") ) ?>');
+
+
+$global-text-direction: ltr !default;
+$global-left: if($global-text-direction == rtl, right, left);
+$global-right: if($global-text-direction == rtl, left, right);
+
+@function ltr_value($var1,$var2){
+  @if $global-text-direction == rtl{
+    @return $var2;
+  }
+  @else {
+    @return $var1;
+  }
+}
+
+$grid-columns: 12;
+$grid-gutter-width: 30px;
+$screen-mb-min: 480px;
+$screen-sm-min: 768px;
+$screen-md-min: 992px;
+$screen-lg-min: 1200px;
+$screen-xlg-min: 1824px;
+
+$screen-mb-max:              ($screen-mb-min - 1) !default;
+$screen-xs-max:              ($screen-sm-min - 1) !default;
+$screen-sm-max:              ($screen-md-min - 1) !default;
+$screen-md-max:              ($screen-lg-min - 1) !default;
+$screen-lg-max:              ($screen-xlg-min - 1) !default;
+
+
+%highlight-font-family{
+  font-family: $highlight-font-family;
+}
+%heading-font-family{
+  font-family: $heading-font-family;
+}
+%body-font-family{
+  font-family: $body-font-family;
+}
+/*--------------------------------------------------------------
+	 @Package: Optima SASS
+	 @File: scss/_base_grid.scss
+---------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+	 @Package: Optima SASS
+	 @File: scss/_base_el_class.scss
+---------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+	 @Package: Optima SASS
+	 @File: scss/vendors/_reset.scss
+---------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+	 @Package: Optima SASS
+	 @File: scss/vendors/_easyzoom.scss
+---------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+	 @Package: Optima SASS
+	 @File: scss/vendors/_lightcase.scss
+---------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+	 @Package: Optima SASS
+	 @File: scss/vendors/_slick.scss
+---------------------------------------------------------------*/
+/* Slider */
+
+/*--------------------------------------------------------------
+	 @Package: Optima SASS
+	 @File: scss/vendors/_laicons.scss
+---------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+	 @Package: Optima SASS
+	 @File: scss/site/_general.scss
+---------------------------------------------------------------*/
+body {
+  font-family: $body-font-family;
+  color: $body-font-color;
+}
+
+a{
+  &:focus,
+  &:hover{
+    color: $primary-color;
+  }
+}
+input, select, textarea{
+  border-color: $border-color;
+  &:focus{
+    border-color: $secondary-color;
+  }
+}
+.button,
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"],
+.btn{
+  background-color: #fff;
+  color: $secondary-color;
+  border-color: $secondary-color;
+  &:hover{
+    background-color: $secondary-color;
+    color: #fff;
+  }
+  &.btn-secondary{
+    background-color: $secondary-color;
+    border-color: $secondary-color;
+    color: #fff;
+    &:hover{
+      background-color: $primary-color;
+      border-color: $primary-color;
+      color: #fff;
+    }
+  }
+  &.btn-primary{
+    background-color: $primary-color;
+    border-color: $primary-color;
+    color: #fff;
+    &:hover{
+      background-color: $secondary-color;
+      border-color: $secondary-color;
+      color: #fff;
+    }
+  }
+}
+.button.alt{
+  background-color: $secondary-color;
+  border-color: $secondary-color;
+  color: #fff;
+  &:hover{
+    background-color: $primary-color;
+    border-color: $primary-color;
+    color: #fff;
+  }
+}
+
+%heading_default{
+  font-family: $heading-font-family;
+  color: $heading-color;
+}
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, .title-xlarge{
+  @extend %heading_default;
+}
+table{
+  th{
+    color: $heading-color;
+  }
+}
+
+.star-rating{
+  color: $three-color;
+
+  span {
+    color: $primary-color;
+  }
+}
+.la-global-message .close-message,
+#lastudio-reveal .close-button{
+  &:hover{
+    i{
+      color: $primary-color;
+    }
+  }
+}
+
+
+.la-pagination{
+  ul{
+    .page-numbers{
+      color: $secondary-color;
+      border-color :$border-color;
+      &.current{
+        background-color: $secondary-color;
+        color: #fff;
+        border-color: $secondary-color;
+      }
+      &:hover{
+        border-color: $secondary-color;
+      }
+    }
+  }
+}
+
+.share-links{
+  a{
+    border-color: $border-color;
+  }
+}
+
+.search-form{
+  .search-button{
+    &:hover{
+      color: $primary-color;
+    }
+  }
+}
+.slick-slider{
+  button.slick-arrow{
+    &:hover{
+      color: $primary-color;
+    }
+  }
+  .slick-dots{
+    li:hover,
+    .slick-active{
+      button{
+        background-color: $primary-color;
+      }
+    }
+  }
+}
+.vertical-style{
+  ul{
+    li{
+      &:hover,
+      &.active{
+        a{
+          color: $primary-color;
+        }
+      }
+    }
+  }
+}
+.filter-style-1,
+.filter-style-default{
+  ul{
+    li{
+      &:hover,
+      &.active{
+        a{
+          color: $secondary-color;
+          border-bottom-color: $primary-color;
+        }
+      }
+    }
+  }
+}
+.filter-style-2{
+  ul{
+    li{
+      a{
+        color: $secondary-color;
+      }
+      &:hover,
+      &.active{
+        a{
+          color: $primary-color;
+        }
+      }
+    }
+  }
+}
+
+/*--------------------------------------------------------------
+	 @Package: Optima SASS
+	 @File: scss/woocommerce/_wooecommerce.scss
+---------------------------------------------------------------*/
+
+.select2-dropdown-open.select2-drop-above .select2-choice,
+.select2-dropdown-open.select2-drop-above .select2-choices,
+.select2-drop.select2-drop-active,
+.select2-container .select2-choice,
+.select2-search,
+.select2-input,
+.input-text{
+  border-color: $border-color;
+}
+
+.stars{
+  [class*="star-"]{
+    &:hover,
+    &.active{
+      color: $primary-color;
+    }
+  }
+}
+
+.woocommerce-info {
+  border-top-color: $success-color;
+  &:before {
+    color: $success-color;
+  }
+}
+.woocommerce-error {
+  border-top-color: $warning-color;
+  &:before {
+    color: $warning-color;
+  }
+}
+.onsale,
+.onsale-badge{
+  background: $primary-color;
+}
+
+.wc-toolbar{
+
+  .wc-view-toggle .active{
+    color: $primary-color;
+  }
+  .wc-ordering{
+    border-color: $border-color;
+  }
+  .wc-view-count{
+    ul{
+      color: $three-color;
+    }
+    li.active{
+      color: $primary-color;
+    }
+  }
+}
+
+.wc-ordering{
+  ul{
+    border-color: $border-color;
+    li{
+      &:hover,
+      &.active{
+        a{
+          background-color: $primary-color;
+        }
+      }
+    }
+  }
+}
+/*--------------------------------------------------------------
+	 @Package: Optima SASS
+	 @File: scss/site/_widget.scss
+---------------------------------------------------------------*/
+
+a.rsswidget {
+  color: $heading-color;
+}
+
+
+.product_list_widget{
+
+  del{
+    color: $body-font-color;
+  }
+}
+.widget_shopping_cart_content{
+  .total{
+    border-top-color: $border-color;
+  }
+}
+
+// Price slider
+
+.widget_price_filter {
+  .price_slider_amount {
+    .button{
+      &:hover{
+        background-color: $primary-color;
+        border-color: $primary-color;
+      }
+    }
+  }
+  .ui-slider {
+    .ui-slider-range {
+      background-color: $secondary-color;
+    }
+  }
+}
+
+
+.widget_layered_nav_filters {
+  ul {
+    li {
+      border-bottom-color: $border-color;
+      .amount{
+        color: $primary-color;
+      }
+    }
+  }
+}
+.calendar_wrap{
+  caption{
+    border-color: $border-color;
+  }
+}
+
+
+.widget-border.widget{
+  border-color: $border-color;
+}
+
+/*--------------------------------------------------------------
+	 @Package: Optima SASS
+	 @File: scss/site/header/_header.scss
+---------------------------------------------------------------*/
+.top-area{
+  background-color: $header-top-background-color;
+  color: $header-top-text-color;
+}
+
+.header-toggle-cart{
+  .header_shopping_cart{
+    .buttons{
+      .wc-forward:not(.checkout){
+        color: $secondary-color;
+        &:hover{
+          color: $primary-color;
+        }
+      }
+      .checkout{
+        background: $secondary-color;
+        &:hover{
+          background-color: $primary-color;
+        }
+      }
+    }
+  }
+}
+
+
+/*--------------------------------------------------------------
+	 @Package: Optima SASS
+	 @File: scss/site/header/_header-aside.scss
+---------------------------------------------------------------*/
+
+.header-v8{
+  .site-header{
+    .header-toggle-menu a.btn-aside-toggle{
+      background-color: $secondary-color;
+      &:hover{
+        color: #fff !important;
+        background-color: $primary-color !important;
+      }
+    }
+  }
+}
+#header_aside{
+  .btn-aside-toggle{
+    &:hover{
+      background: $primary-color;
+    }
+  }
+}
+
+.header-v9{
+  #masthead_aside{
+    .header-aside-nav{
+      .mega-menu > li{
+        border-bottom-color: $border-color;
+      }
+    }
+  }
+}
+
+/*--------------------------------------------------------------
+	 @Package: Optima SASS
+	 @File: scss/site/header/_header-sticky.scss
+---------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+	 @Package: Optima SASS
+	 @File: scss/site/header/_header-transparency.scss
+---------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+	 @Package: Optima SASS
+	 @File: scss/site/header/_header-mobile.scss
+---------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+	 @Package: Optima SASS
+	 @File: scss/site/_mega_menu.scss
+---------------------------------------------------------------*/
+
+.mega-menu,
+.menu{
+  .tip {
+    &.hot {
+      background-color: $primary-color;
+      .tip-arrow:before {
+        color: $primary-color;
+      }
+    }
+  }
+}
+.mega-menu{
+  .popup {
+    li {
+      > a{
+        color: $menu-dropdown-link-color;
+        background-color: $menu-dropdown-link-bg-color;
+      }
+      &:hover{
+        > a{
+          color: $menu-dropdown-link-hover-color;
+          background-color: $menu-dropdown-link-hover-bg-color;
+        }
+      }
+      &.active{
+        > a{
+          color: $menu-dropdown-link-active-color;
+          background-color: $menu-dropdown-link-active-bg-color;
+        }
+      }
+    }
+  }
+  .popup > .inner,
+  .mm-popup-wide .inner > ul.sub-menu > li li ul.sub-menu,
+  .mm-popup-narrow ul ul{
+    background-color: $menu-dropdown-bg-color;
+  }
+  .mm-popup-wide .inner > ul.sub-menu > li li li:hover > a,
+  .mm-popup-narrow li.menu-item:hover > a{
+    color: $menu-dropdown-link-hover-color;
+    background-color: $menu-dropdown-link-hover-bg-color;
+  }
+  .mm-popup-wide .inner > ul.sub-menu > li li li.active > a,
+  .mm-popup-narrow li.menu-item.active > a{
+    color: $menu-dropdown-link-active-color;
+    background-color: $menu-dropdown-link-active-bg-color;
+  }
+  .mm-popup-wide .inner > ul.sub-menu > li > a{
+    color: $menu-wide-heading-color;
+    @extend %heading-font-family;
+  }
+}
+
+/*--------------------------------------------------------------
+	 @Package: Optima SASS
+	 @File: scss/vendors/_dl_menu.scss
+---------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+	 @Package: Optima SASS
+	 @File: scss/site/_main.scss
+---------------------------------------------------------------*/
+
+.section-page-header{
+  border-top-color: $border-color;
+  border-bottom-color: $border-color;
+}
+
+/*--------------------------------------------------------------
+	 @Package: Optima SASS
+	 @File: scss/site/_sidebar.scss
+---------------------------------------------------------------*/
+// Sidebar Widget
+
+.sidebar-inner .product-title,
+.mini_cart_item a:not(.remove){
+  color: $heading-color;
+}
+
+/*--------------------------------------------------------------
+	 @Package: Optima SASS
+	 @File: scss/site/footer/_footer.scss
+---------------------------------------------------------------*/
+
+.site-footer{
+  color: $footer-text-color;
+  a{
+    color: $footer-link-color;
+    &:hover{
+      color: $footer-link-hover-color;
+    }
+  }
+  .widget{
+    .widget-title{
+      color: $footer-heading-color;
+    }
+  }
+}
+.footer-bottom{
+  background-color: $footer-copyright-background-color;
+  color: $footer-copyright-text-color;
+  a{
+    color: $footer-copyright-link-color;
+    &:hover{
+      color: $footer-copyright-link-hover-color;
+    }
+  }
+}
+
+/*--------------------------------------------------------------
+	 @Package: Optima SASS
+	 @File: scss/site/_category_post.scss
+---------------------------------------------------------------*/
+.entry-thumbnail{
+  &.format-quote{
+    .format-quote-content{
+      @extend %highlight-font-family;
+    }
+    .quote-author{
+      @extend %heading-font-family;
+    }
+  }
+  &.format-link{
+    .format-content{
+      @extend %highlight-font-family;
+    }
+  }
+}
+
+
+/*--------------------------------------------------------------
+	 @Package: Optima SASS
+	 @File: scss/site/_search_post.scss
+---------------------------------------------------------------*/
+.site-header .header-toggle-search,
+#masthead_aside .header-toggle-search{
+  .header-search-form{
+    background-color: #fff;
+  }
+}
+
+/*--------------------------------------------------------------
+	 @Package: Optima SASS
+	 @File: scss/site/_single_post.scss
+---------------------------------------------------------------*/
+.tags-list{
+  a{
+    &:hover{
+      color: $primary-color;
+    }
+  }
+}
+.item--category{
+  color: $three-color;
+  @extend %highlight-font-family;
+  a{
+    &:hover{
+      color: $primary-color;
+    }
+  }
+}
+.entry-meta{
+  a{
+    &:hover{
+      color: $primary-color;
+    }
+  }
+}
+.btn-readmore{
+  font-family: $heading-font-family;
+  color: $heading-color;
+  i{
+    color: $primary-color;
+  }
+}
+.entry-meta-footer{
+  border-color: $border-color;
+  .tags-list{
+    a{
+      font-family: $heading-font-family;
+    }
+    i{
+      color: $primary-color;
+    }
+  }
+}
+
+.author-info{
+  border-color: $border-color;
+}
+
+.post-navigation{
+  .post-title{
+    color: $heading-color;
+  }
+}
+
+.la-related-posts{
+  &.style-3{
+    a:hover{
+      color: $primary-color;
+    }
+  }
+}
+
+/*--------------------------------------------------------------
+	 @Package: Optima SASS
+	 @File: scss/site/_page.scss
+---------------------------------------------------------------*/
+
+
+/**
+For demo
+*/
+
+.home-09-big-banner {
+  .subheading-tag {
+    span{
+      &:after{
+        border-bottom-color: $primary-color;
+      }
+    }
+  }
+}
+.home-09-custom-heading{
+  &:after{
+    border-bottom-color: $primary-color;
+  }
+}
+.la-banner-box.home-09-banner-type-2{
+  .banner--link-overlay{
+    &:after{
+      background-color: $secondary-color;
+    }
+    &:before{
+      border-bottom-color: $primary-color;
+    }
+  }
+}
+
+.ribbon-callnow {
+  background: $primary-color;
+  &:after{
+    border-top-color: $primary-color;
+    border-bottom-color: $primary-color;
+  }
+  .callnow-label {
+    font-family: $highlight-font-family;
+  }
+}
+
+/*--------------------------------------------------------------
+	 @Package: Optima SASS
+	 @File: scss/site/_comment.scss
+---------------------------------------------------------------*/
+
+.commentlist{
+  .comment-meta{
+    .comment-author{
+      color: $secondary-color;
+      @extend %heading-font-family;
+    }
+    .comment-reply-link{
+      float: $global-right;
+      color: $secondary-color;
+      &:hover{
+        color: $primary-color;
+      }
+    }
+  }
+
+  .comment{
+    .comment-text{
+      border-color: $border-color;
+    }
+  }
+}
+
+.wc-tab-content{
+  .commentlist{
+    .meta{
+      strong{
+        color: $heading-color;
+      }
+    }
+  }
+}
+
+.comment_container + .comment-respond{
+  .comment-reply-title{
+    a{
+      font-family: $body-font-family;
+    }
+  }
+}
+
+/*--------------------------------------------------------------
+	 @Package: Optima SASS
+	 @File: scss/site/_portfolio.scss
+---------------------------------------------------------------*/
+
+.portfolio-single-page{
+  .entry-tax-list {
+    color: $heading-color;
+    @extend %heading-font-family;
+  }
+  .portfolio-meta-data{
+    .meta-item{
+      [class*="optima-icon"]{
+        color: $heading-color;
+      }
+    }
+  }
+  &.style-3{
+    .portfolio-meta-datawrap{
+      .portfolio-meta-data{
+        .meta-item{
+          border-color: $border-color;
+        }
+        .meta-info{
+          > span{
+            color: $heading-color;
+          }
+        }
+      }
+    }
+  }
+
+  &.style-4{
+    .portfolio-social-links label {
+      color: $heading-color;
+    }
+  }
+
+}
+
+/*--------------------------------------------------------------
+	 @Package: Optima SASS
+	 @File: scss/shortcodes/_overrride.scss
+---------------------------------------------------------------*/
+.la-blockquote.style-1{
+  border-color: $border-color;
+  color: $secondary-color;
+  @extend %highlight-font-family;
+  &:before{
+    background: $primary-color;
+  }
+}
+.la-blockquote.style-2{
+  color: $secondary-color;
+  @extend %highlight-font-family;
+  footer{
+    cite{
+      @extend %heading-font-family;
+    }
+  }
+}
+
+.la-vc-btn{
+  &.la-outline-btn .vc_btn3 {
+    @extend %heading-font-family;
+  }
+  &.la-outline-btn2 .vc_btn3 {
+    @extend %heading-font-family;
+  }
+}
+
+.vc_btn3-style-gradient-custom.vc_btn3.vc_btn3-size-md {
+  font-family: $heading-font-family;
+}
+
+.la-btn{
+  @extend %heading-font-family;
+  &.la-btn-style-flat{
+    &.la-btn-color-white{
+      color: $secondary-color;
+      background-color: #fff;
+      &:hover{
+        color: #fff;
+        background-color: $primary-color;
+      }
+    }
+    &.la-btn-color-primary{
+      color: #fff;
+      background-color: $primary-color;
+      &:hover{
+        color: #fff;
+        background-color: $secondary-color;
+      }
+    }
+    &.la-btn-color-black{
+      color: #fff;
+      background-color: $secondary-color;
+      &:hover{
+        color: #fff;
+        background-color: $primary-color;
+      }
+    }
+    &.la-btn-color-gray{
+      color: #fff;
+      background-color: #9d9d9d;
+      border-color: #9d9d9d;
+      &:hover{
+        color: #fff;
+        background-color: $primary-color;
+        border-color: $primary-color;
+      }
+    }
+  }
+  &.la-btn-style-outline{
+    &.la-btn-color-primary{
+      color: $primary-color;
+    }
+    &.la-btn-color-white{
+      color: #fff;
+      border-color: #fff;
+      background-color: transparent;
+    }
+    &.la-btn-color-black{
+      color: $secondary-color;
+      &:hover{
+        border-color: $secondary-color;
+        background-color: $secondary-color;
+        color: #fff;
+      }
+    }
+    &.la-btn-color-gray{
+      color: $secondary-color;
+      background-color: transparent;
+      border-color: #9d9d9d;
+      &:hover{
+        color: #fff;
+        background-color: $primary-color;
+        border-color: $primary-color;
+      }
+    }
+    &:hover{
+      color: #fff;
+      border-color: $primary-color;
+      background-color: $primary-color;
+    }
+  }
+}
+
+.btn-view-all-works.vc_btn3-container.la-vc-btn .vc_btn3 {
+  @extend %heading-font-family;
+}
+
+.social-media-link{
+
+  &.style-round,
+  &.style-square,
+  &.style-circle{
+    a{
+      &:hover{
+        background-color: $primary-color;
+      }
+    }
+  }
+  &.style-outline{
+    a{
+      border-color: $border-color;
+      &:hover{
+        background-color: $primary-color;
+        border-color: $primary-color;
+        color: #fff;
+      }
+    }
+  }
+}
+
+body .vc_toggle{
+
+  &.vc_toggle_default{
+    border-color: $border-color;
+    &.vc_toggle_active{
+      .vc_toggle_title{
+        h4{
+          color: $primary-color;
+        }
+      }
+    }
+  }
+}
+
+.la-bigger-btn {
+  .la-btn,
+  .vc_btn3 {
+    @extend %heading-font-family;
+  }
+}
+/*--------------------------------------------------------------
+	 @Package: Optima SASS
+	 @File: scss/shortcodes/_heading.scss
+---------------------------------------------------------------*/
+.la-headings{
+  .la-line{
+    border-color: $primary-color;
+  }
+}
+.icon-heading.heading-with-line:after {
+  border-top-color: $primary-color;
+}
+
+.custom-heading-with-dots{
+  .la-headings{
+    &:before{
+      background-color: $primary-color;
+    }
+    .subheading-tag{
+      @extend %heading-font-family;
+    }
+  }
+}
+
+.hover-heading-box-home-1{
+  &.wpb_column{
+    .la-headings{
+      .subheading-tag{
+        a{
+          @extend %heading-font-family;
+        }
+      }
+    }
+    &:hover{
+      &:before{
+        background-color: $primary-color;
+      }
+    }
+  }
+}
+
+.hover-heading-box{
+  &.wpb_column{
+    .la-headings{
+      .subheading-tag{
+        a{
+          @extend %heading-font-family;
+        }
+      }
+    }
+    &:hover{
+      &:before{
+        background-color: $primary-color;
+      }
+    }
+  }
+}
+
+/*--------------------------------------------------------------
+	 @Package: Optima SASS
+	 @File: scss/shortcodes/_team_member.scss
+---------------------------------------------------------------*/
+
+.team-member-loop{
+  &.loop-style-1{
+    .item--role,
+    .item--title{
+      color: $secondary-color;
+      @extend %heading-font-family;
+    }
+  }
+  &.loop-style-4{
+    .item--title{
+      color: $primary-color;
+    }
+  }
+  &.loop-style-5{
+    .item--title{
+      color: $primary-color;
+    }
+    .item--role{
+      color: $secondary-color;
+    }
+  }
+  &.loop-style-6{
+    .entry-excerpt{
+      border-top-color: $border-color;
+    }
+  }
+  &.loop-style-7{
+    .item--info{
+      background-color: $primary-color;
+      .item--title{
+        color: $secondary-color;
+      }
+      .item--role{
+        color: $secondary-color;
+      }
+    }
+    .member-social{
+      color: $secondary-color;
+    }
+  }
+  &.loop-style-9{
+    .loop-item:hover,
+    .loop-item.slick-current{
+      .item--image {
+        img {
+          border-color: $primary-color;
+        }
+      }
+    }
+  }
+  &.loop-style-10{
+    .item--info{
+      color: $heading-color;
+    }
+  }
+}
+.la-team-member{
+  .member-info-09{
+    .item--role,
+    .item--title{
+      color: $heading-color;
+      font-family: $heading-font-family;
+    }
+    .vc_progress_bar{
+      .vc_general.vc_single_bar{
+        .vc_bar{
+          background-color: $primary-color;
+        }
+      }
+    }
+  }
+}
+/*--------------------------------------------------------------
+	 @Package: Optima SASS
+	 @File: scss/shortcodes/_banner.scss
+---------------------------------------------------------------*/
+
+.banner-type-hover_effect{
+  .banner--link-overlay{
+    &:after{
+      background: $primary-color;
+    }
+  }
+}
+
+.column-banner-spa2.vc_column_container>.vc_column-inner > .wpb_wrapper {
+  border-color: $border-color;
+  .la-headings{
+    .subheading-tag{
+      a{
+        color: $secondary-color;
+      }
+    }
+  }
+}
+/*--------------------------------------------------------------
+	 @Package: Optima SASS
+	 @File: scss/shortcodes/_tabs.scss
+---------------------------------------------------------------*/
+
+
+.wpb-js-composer .vc_tta{
+  &[class*="tabs-la-"]{
+    .vc_tta-tabs-list{
+      li{
+        &.vc_active{
+          color: $primary-color;
+        }
+      }
+    }
+  }
+  &.tabs-la-2{
+    .vc_tta-tabs-list{
+      li{
+        &:hover,
+        &.vc_active{
+          > a{
+            background-color: $primary-color;
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+  &.tabs-la-3{
+    .vc_tta-tabs-list{
+      li{
+        a{
+          color: $three-color;
+        }
+        &:hover,
+        &.vc_active{
+          a{
+            border-color: $three-color;
+            color: $secondary-color;
+          }
+        }
+      }
+    }
+  }
+}
+/**
+  VERTICAL TOUR
+*/
+
+.wpb-js-composer .vc_tta-container .vc_tta{
+  &[class*="tour-"]{
+    .vc_tta-tabs-list{
+      li{
+        &:hover,
+        &.vc_active{
+          background-color: $primary-color;
+        }
+      }
+    }
+    &.tour-la-business{
+      .vc_tta-panel{
+        &.vc_active{
+          .vc_tta-panel-title{
+            background-color: $primary-color;
+          }
+        }
+      }
+    }
+  }
+}
+/*--------------------------------------------------------------
+	 @Package: Optima SASS
+	 @File: scss/shortcodes/_testimonial.scss
+---------------------------------------------------------------*/
+.testimonial-loop{
+  .item--title{
+    color: $heading-color;
+    @extend %heading-font-family;
+  }
+
+  &.loop-style-1{
+    .item--excerpt{
+      color: $secondary-color;
+    }
+  }
+  &.loop-style-2{
+    .item--role{
+      @extend %heading-font-family;
+    }
+    .item--excerpt{
+      @extend %highlight-font-family;
+      &:before{
+        border-color-top: $primary-color;
+      }
+    }
+  }
+  &.loop-style-3{
+    .item--excerpt{
+      color: $secondary-color;
+      @extend %highlight-font-family;
+      &:before{
+        color: $primary-color;
+      }
+    }
+  }
+  &.loop-style-4{
+    .item--excerpt{
+      color: $secondary-color;
+    }
+  }
+  &.loop-style-5{
+    .item-inner{
+      border-color: $border-color;
+    }
+    .item--excerpt{
+      color: $secondary-color;
+    }
+  }
+  &.loop-style-6{
+    .item--excerpt{
+      &:before{
+        color: $primary-color;
+      }
+    }
+    .item--title,
+    .item--role{
+      @extend %heading-font-family;
+    }
+  }
+  &.loop-style-7{
+    .item--excerpt {
+      color: $heading-color;
+    }
+    .item--title,
+    .item--role{
+      color: $primary-color;
+      @extend %heading-font-family;
+    }
+  }
+  &.loop-style-8{
+    .item--title,
+    .item--role{
+      @extend %heading-font-family;
+    }
+  }
+
+  &.loop-style-10{
+    .item--excerpt {
+      color: $secondary-color;
+    }
+  }
+  &.loop-style-11{
+    .item--info{
+      &:before{
+        color: $primary-color;
+      }
+    }
+    .item--title-role{
+      &:before{
+        border-top-color: $primary-color;
+      }
+    }
+  }
+}
+.testimonial-loop.loop-style-3 .testimonial-item,
+.testimonial-3-nav{
+  .item--role{
+    color: $secondary-color;
+    @extend %highlight-font-family;
+  }
+}
+
+/*--------------------------------------------------------------
+	 @Package: Optima SASS
+	 @File: scss/shortcodes/_icon_box.scss
+---------------------------------------------------------------*/
+.la-sc-icon-boxes{
+  .box-icon-style-simple{
+    span{
+      color: $primary-color;
+    }
+  }
+  .box-icon-style-square,
+  .box-icon-style-circle,
+  .box-icon-style-round{
+    span{
+      color: #fff;
+      background-color: $primary-color;
+    }
+  }
+}
+
+.hover-box-icon{
+  .la-sc-icon-boxes{
+    &:hover{
+      border-bottom-color: $primary-color;
+      a{
+        color: $secondary-color;
+        &:hover{
+          color: $primary-color;
+        }
+      }
+    }
+  }
+}
+.hover-box-icon2{
+  .la-sc-icon-boxes{
+    &:hover{
+      border-bottom-color: $primary-color;
+      a{
+        color: $secondary-color;
+        &:hover{
+          color: $primary-color;
+        }
+      }
+    }
+  }
+}
+
+.la-custom-icon-box{
+  &:hover{
+    .icon-box{
+      background-color: $primary-color;
+    }
+  }
+  .icon-box{
+    color: $primary-color;
+  }
+}
+
+.btn.btn-icon-readmore {
+  &:hover{
+    border-color: $primary-color;
+  }
+}
+
+.iconbox-with-link-readmore{
+  .box-description{
+    a{
+      font-family: $heading-font-family;
+      color: $heading-color;
+      border-top: $border-color;
+    }
+  }
+}
+/*--------------------------------------------------------------
+	 @Package: Optima SASS
+	 @File: scss/shortcodes/_showposts.scss
+---------------------------------------------------------------*/
+.showposts-loop{
+  .link-readmore{
+    @extend %heading-font-family;
+    color: $secondary-color;
+    &:hover{
+      color: $primary-color;
+    }
+  }
+
+  &.blog-grid_1{
+    &.lg-grid-1-items{
+      .item-inner{
+        border-bottom-color: $border-color;
+      }
+    }
+  }
+
+  &.blog-grid_4{
+    .item-info{
+      border-color: $border-color;
+    }
+    .entry-meta-footer{
+      .m-sharing-box{
+        color: $three-color;
+      }
+    }
+    .item-inner:hover{
+      .entry-meta-footer .m-sharing-box{
+        color: $primary-color;
+      }
+      .item-info{
+        border-bottom-color: $primary-color;
+      }
+    }
+  }
+  &.blog-special_1{
+    .link-readmore{
+      border-color: $border-color;
+      &:hover{
+        background: $primary-color;
+        border-color: $primary-color;
+        color: #fff;
+      }
+    }
+  }
+}
+
+.showposts-list{
+  .loop-item + .loop-item{
+    border-top-color: $border-color;
+  }
+}
+
+/*--------------------------------------------------------------
+	 @Package: Optima SASS
+	 @File: scss/shortcodes/_maps.scss
+---------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+	 @Package: Optima SASS
+	 @File: scss/shortcodes/_contact_form_7.scss
+---------------------------------------------------------------*/
+
+.contact-form-style-default{
+  .wpcf7-form-control-wrap{
+    .wpcf7-form-control {
+      color: $heading-color;
+      font-family: $heading-font-family;
+    }
+  }
+}
+
+.contact-form-style-01{
+  label {
+    color: $three-color;
+  }
+  .wpcf7-form-control-wrap{
+    .wpcf7-textarea,
+    .wpcf7-text{
+      color: $secondary-color;
+    }
+  }
+}
+
+.contact-form-style-03{
+  .wpcf7-form-control-wrap{
+    .wpcf7-select,
+    .wpcf7-text,
+    .wpcf7-textarea{
+      &:focus{
+        border-color: $primary-color;
+      }
+    }
+  }
+  .wpcf7-submit{
+    &:hover{
+      color: #fff;
+      background-color: $primary-color;
+      border-color: $primary-color;
+    }
+  }
+}
+
+.newsletter-form1{
+  background: $primary-color;
+}
+.subscribe-style-01{
+  .yikes-easy-mc-form{
+    .yikes-easy-mc-email{
+      color: $three-color;
+      &:focus{
+        color: $secondary-color;
+      }
+    }
+    .yikes-easy-mc-submit-button{
+      color: $secondary-color;
+      &:hover{
+        color: $primary-color;
+      }
+    }
+  }
+}
+
+.subscribe-style-02{
+
+  .yikes-easy-mc-form{
+
+    .yikes-easy-mc-submit-button{
+      &:hover{
+        color: $primary-color;
+      }
+    }
+  }
+}
+
+/*--------------------------------------------------------------
+	 @Package: Optima SASS
+	 @File: scss/shortcodes/_show_portfolios.scss
+---------------------------------------------------------------*/
+%portfolio_grid_default{
+
+}
+%portfolio_grid_2{
+  .entry-tax-list{
+    @extend %heading-font-family;
+  }
+}
+
+%portfolio_grid_3{
+  .entry-title{
+    a{
+      background-color: $primary-color;
+    }
+  }
+}
+
+%portfolio_grid_4{
+  .entry-title{
+    @extend %highlight-font-family;
+  }
+  .item-inner:hover{
+    .item--link-overlay:before{
+      background: $primary-color;
+    }
+  }
+}
+%portfolio_grid_5{
+
+}
+%portfolio_grid_6{
+  .item-inner:hover{
+    .item--link-overlay{
+      border-bottom-color: $primary-color;;
+    }
+  }
+}
+
+%portfolio_grid_7{
+
+}
+
+.portfolios-grid.loop-style-1,
+.pf-masonry.pf-s-1,
+.pf-masonry.pf-s-default{
+  @extend %portfolio_grid_default;
+}
+.portfolios-grid.loop-style-2,
+.pf-masonry.pf-s-2{
+  @extend %portfolio_grid_2;
+}
+
+.portfolios-grid.loop-style-3,
+.pf-masonry.pf-s-3{
+  @extend %portfolio_grid_3;
+}
+
+.portfolios-grid.loop-style-4,
+.pf-masonry.pf-s-4{
+  @extend %portfolio_grid_4;
+}
+
+.portfolios-grid.loop-style-5,
+.pf-masonry.pf-s-5{
+  @extend %portfolio_grid_5;
+}
+
+.portfolios-grid.loop-style-6,
+.pf-masonry.pf-s-6{
+  @extend %portfolio_grid_6;
+}
+.portfolios-grid.loop-style-7,
+.pf-masonry.pf-s-7{
+  @extend %portfolio_grid_7;
+}
+
+
+.portfolios-list{
+  .entry-tax-list{
+    @extend %heading-font-family;
+    color: $heading-color;
+  }
+  .link-discover{
+    color: $secondary-color;
+    border-color: $border-color;
+    @extend %heading-font-family;
+    &:hover{
+      color: #fff;
+      border-color: $primary-color;
+      background-color: $primary-color;
+    }
+  }
+  &.loop-style-3{
+    .item-inner{
+      &:hover{
+        .item--info{
+          background-color: $primary-color;
+        }
+      }
+    }
+  }
+}
+
+/*--------------------------------------------------------------
+	 @Package: Optima SASS
+	 @File: scss/shortcodes/_cta.scss
+---------------------------------------------------------------*/
+
+.vc_cta3-container .la-cta-01.vc_cta3{
+  h4{
+    @extend %highlight-font-family;
+  }
+}
+/*--------------------------------------------------------------
+	 @Package: Optima SASS
+	 @File: scss/shortcodes/_countdown.scss
+---------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+	 @Package: Optima SASS
+	 @File: scss/shortcodes/_progress_bar.scss
+---------------------------------------------------------------*/
+.vc_progress_bar{
+  .vc_general.vc_single_bar{
+    .vc_label{
+      @extend %heading-font-family;
+    }
+  }
+}
+
+/*--------------------------------------------------------------
+	 @Package: Optima SASS
+	 @File: scss/shortcodes/_stats_counter.scss
+---------------------------------------------------------------*/
+
+.la-stats-counter{
+  &.about-counter{
+    .icon-value {
+      @extend %heading-font-family;
+    }
+  }
+}
+
+/*--------------------------------------------------------------
+	 @Package: Optima SASS
+	 @File: scss/shortcodes/_accordion.scss
+---------------------------------------------------------------*/
+.wpb-js-composer .vc_tta.vc_tta-accordion{
+  &.vc_tta-style-la-1{
+    .vc_tta-panel-title{
+      border-bottom-color: $border-color;
+    }
+  }
+  &.vc_tta-style-la-2{
+    .vc_tta-panel{
+      &.vc_active{
+        .vc_tta-panel-title{
+          color: $primary-color;
+        }
+      }
+    }
+  }
+  &.vc_tta-style-la-3{
+    .vc_tta-panel{
+      border-color: $border-color;
+      &.vc_active{
+        border-color: $primary-color;
+      }
+    }
+  }
+}
+/*--------------------------------------------------------------
+	 @Package: Optima SASS
+	 @File: scss/shortcodes/_pricing_table.scss
+---------------------------------------------------------------*/
+
+.la-pricing-table{
+	.wrap-icon{
+		.icon-inner{
+			color: $primary-color;
+		}
+	}
+}
+.la-pricing-table-wrap.style-1{
+	.pricing-heading{
+		color: $primary-color;
+	}
+	.package-featured{
+		li{
+			border-top-color: $border-color;
+		}
+	}
+	.pricing-action{
+		a {
+			color: $primary-color;
+			&:hover{
+				background-color: $primary-color;
+				border-color: $primary-color;
+				color: #fff;
+			}
+		}
+	}
+	&.is_box_featured{
+		.pricing-action{
+			a{
+				background-color: $primary-color;
+				border-color: $primary-color;
+				color: #fff;
+			}
+		}
+	}
+}
+.la-pricing-table-wrap.style-2{
+	.la-pricing-table{
+		border-color: $border-color;
+		.pricing-heading{
+			background-color: $primary-color;
+		}
+		.wrap-icon .icon-inner{
+			color: $primary-color;
+		}
+		.pricing-action{
+			background-color: $primary-color;
+		}
+	}
+}
+.la-pricing-table-wrap.style-3{
+	.la-pricing-table{
+		border-top-color: $border-color;
+		.pricing-heading-wrap{
+			background-color: $primary-color;
+			&:after{
+				content: '';
+				border-top-color: $primary-color;
+			}
+		}
+	}
+}
+.la-pricing-table-wrap.style-4{
+	.la-pricing-table{
+		.pricing-heading{
+			color: $primary-color;
+			@extend %heading-font-family
+		}
+		.price-box{
+			.price-value{
+				@extend %heading-font-family
+			}
+		}
+
+		.pricing-action{
+			a{
+				@extend %heading-font-family;
+			}
+		}
+		&:hover{
+			.pricing-action{
+				a{
+					background-color: $primary-color;
+					border-color: $primary-color;
+				}
+			}
+		}
+	}
+}
+/*--------------------------------------------------------------
+	 @Package: Optima SASS
+	 @File: scss/shortcodes/_timeline.scss
+---------------------------------------------------------------*/
+.la-timeline-wrap{
+  &.style-1{
+    .timeline-line{
+      border-left-color: $border-color;
+    }
+    .timeline-block{
+      .timeline-dot{
+        background-color: $primary-color;
+      }
+      .timeline-subtitle{
+        color: $primary-color;
+      }
+    }
+  }
+  &.style-2{
+    .timeline-title{
+      &:after{
+        border-bottom-color: $border-color;
+      }
+    }
+  }
+}
+
+/*--------------------------------------------------------------
+	 @Package: Optima SASS
+	 @File: scss/woocommerce/_category_product.scss
+---------------------------------------------------------------*/
+.catalog-grid-1{
+  .product-category{
+    .cat-img{
+      span{
+        color: $secondary-color;
+        &:before{
+          color: $primary-color;
+        }
+      }
+    }
+    &:hover{
+      h3{
+        color: $primary-color;
+      }
+    }
+  }
+}
+.catalog-grid-2{
+  .product-category{
+    .cat-information{
+      .cat-des{
+        @extend %highlight-font-family;
+      }
+      > span{
+        background-color: $primary-color;
+        color: $secondary-color;
+      }
+    }
+  }
+}
+
+.product-item{
+  .button{
+    &:hover{
+      color: $primary-color;
+    }
+  }
+  .button{
+    color: $secondary-color;
+    &:hover{
+      color: $primary-color;
+    }
+  }
+  .price{
+    color: $secondary-color;
+  }
+}
+
+.products-grid.products-grid-default,
+.products-grid.products-grid-1{
+
+  .product--thumbnail .product--action{
+    .wrap-addto{
+      a{
+        color: $secondary-color;
+        &:hover{
+          background-color: $primary-color;
+        }
+      }
+    }
+    > a{
+      background-color: $primary-color;
+    }
+  }
+}
+
+.products-grid.products-grid-1{
+  .item--image-holder{
+    border-color: $border-color;
+  }
+  .product--thumbnail .product--action{
+    > a{
+      color: $secondary-color;
+    }
+  }
+  .price{
+    color: $primary-color;
+  }
+}
+.products-grid.products-grid-2{
+  .product--thumbnail .product--action{
+    .wrap-addto{
+      a{
+        color: $secondary-color;
+        &:hover{
+          background-color: $primary-color;
+        }
+      }
+    }
+  }
+  .product--info{
+    .product--action{
+      > a{
+        color: $secondary-color;
+        &:hover{
+          background-color: $primary-color;
+        }
+      }
+    }
+  }
+  .item-inner:hover{
+    .product--info{
+      .product--action{
+        > a{
+          background-color: $primary-color;
+        }
+      }
+    }
+  }
+}
+.products-grid.products-grid-3{
+  .item--image-holder{
+    .quickview{
+      &:hover{
+        color: $primary-color;
+      }
+    }
+  }
+  .product--thumbnail .product--action{
+    a{
+      color: $secondary-color;
+      &:hover{
+        background-color: $primary-color;
+      }
+    }
+  }
+}
+.products-list{
+  .product-item{
+    .product--info{
+      .product--action{
+        .wrap-addto{
+          a{
+            border-color: $border-color;
+            &:before{
+              color: $primary-color;
+            }
+            &:hover{
+              background-color: $primary-color;
+              color: #fff;
+              border-color: $primary-color;
+            }
+          }
+        }
+        > a{
+          background-color: $secondary-color;
+          &:hover{
+            background-color: $primary-color;
+          }
+        }
+      }
+    }
+  }
+}
+
+[class*="products-list-countdown"]{
+  .product-item{
+    .elm-countdown {
+      .countdown-section{
+        color: $three-color;
+      }
+      .countdown-amount{
+        color: $secondary-color;
+      }
+    }
+  }
+}
+
+.products-list-countdown-3{
+  .product-item{
+    .price{
+      color: $primary-color;
+    }
+  }
+}
+
+.products-list-countdown-4{
+  .product-item{
+    .price{
+      color: $primary-color;
+    }
+  }
+}
+/*--------------------------------------------------------------
+	 @Package: Optima SASS
+	 @File: scss/woocommerce/_search_product.scss
+---------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+	 @Package: Optima SASS
+	 @File: scss/woocommerce/_single_product.scss
+---------------------------------------------------------------*/
+.product--thumbnails{
+  .slick-current{
+    &:before{
+      border-bottom-color: $primary-color;
+    }
+  }
+  .slick-arrow{
+    &:hover{
+      background: $primary-color;
+    }
+  }
+}
+.product--summary{
+  .price{
+    color: $secondary-color;
+    font-family: $heading-font-family;
+  }
+  .product_meta{
+    font-family: $heading-font-family;
+    a{
+      color: $primary-color;
+    }
+    .sku{
+      color: $heading-color;
+    }
+  }
+
+  form.cart{
+    button{
+      font-family: $heading-font-family;
+    }
+  }
+
+  .button.add_compare,
+  .button.add_wishlist{
+    border-color: $border-color;
+    &:hover{
+      background-color: $primary-color;
+      border-color: $primary-color;
+      &:before{
+        color: $primary-color;
+      }
+    }
+  }
+}
+.wc-tabs{
+  li:hover,
+  li.active{
+    > a{
+      color: $secondary-color;
+      border-color: $primary-color;
+    }
+  }
+}
+
+.la-p-single-1{
+  .product-main-image{
+    .p---large{
+      &:not(.no-thumbgallery){
+        .slick-vertical{
+          .slick-current{
+            img{
+              border-color: $primary-color;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+/*--------------------------------------------------------------
+	 @Package: Optima SASS
+	 @File: scss/woocommerce/_cart.scss
+---------------------------------------------------------------*/
+.shop_table{
+  &.cart{
+    color: $secondary-color;
+  }
+}
+td.actions{
+  .coupon{
+    border-color: $border-color;
+  }
+}
+.cart-collaterals{
+  .shop_table{
+    .amount{
+      color: $secondary-color;
+    }
+  }
+}
+
+
+.section-checkout-step{
+  li{
+    &:before{
+      color: $border-color;
+    }
+    &:after{
+      border-top-color: $border-color;
+    }
+  }
+  .step-num{
+    background: $secondary-color;
+  }
+  .step-name{
+    color: $secondary-color;
+  }
+}
+body {
+  &.woocommerce-cart {
+    .section-checkout-step {
+      .step-1 {
+        .step-num {
+          background-color: $primary-color;
+        }
+      }
+    }
+  }
+  &.woocommerce-checkout:not(.woocommerce-order-received) {
+    .section-checkout-step {
+      .step-2 {
+        .step-num {
+          background-color: $primary-color;
+        }
+      }
+    }
+  }
+  &.woocommerce-order-received{
+    .section-checkout-step {
+      .step-3 {
+        .step-num {
+          background-color: $primary-color;
+        }
+      }
+    }
+  }
+}
+
+
+.woocommerce > p.cart-empty{
+  &:before {
+    color: $secondary-color;
+  }
+}
+/*--------------------------------------------------------------
+	 @Package: Optima SASS
+	 @File: scss/woocommerce/_checkout.scss
+---------------------------------------------------------------*/
+
+.woocommerce{
+  #order_review{
+    border-color: $border-color;
+  }
+  #order_review_heading,
+  .woocommerce-billing-fields h3{
+    &:after{
+      border-bottom-color: $primary-color;
+    }
+  }
+}
+/*--------------------------------------------------------------
+	 @Package: Optima SASS
+	 @File: scss/woocommerce/_my_account.scss
+---------------------------------------------------------------*/
+
+.woocommerce-MyAccount-navigation{
+  li{
+    &.is-active{
+      a{
+        color: $primary-color;
+      }
+    }
+  }
+}
+
+.registration-form{
+  .button{
+    background: $primary-color;
+  }
+}
+
+/*--------------------------------------------------------------
+	 @Package: Optima SASS
+	 @File: scss/site/_extra_class.scss
+---------------------------------------------------------------*/
+.la-loader.spinner1 {
+  background-color: $primary-color
+}
+
+.la-loader.spinner2 {
+  background-color: $primary-color;
+}
+.la-loader.spinner3 .bounce1,
+.la-loader.spinner3 .bounce2,
+.la-loader.spinner3 .bounce3 {
+  background-color: $primary-color;
+}
+
+.la-loader.spinner4 .dot1,
+.la-loader.spinner4 .dot2 {
+  background-color: $primary-color;
+}
+
+
+.item--overlay{
+  background-color: $primary-color;
+}
+.three-text-color,
+.text-color-highlight,
+.highlight-text-color{
+	color: $three-color !important;
+}
+.text-color-heading{
+  color: $heading-color !important;
+}
+.text-color-primary{
+  color: $primary-color !important;
+}
+.text-color-white{
+  color: #fff !important;
+}
+.border-color-primary{
+  border-color: $primary-color !important;
+}
+.border-color-secondary{
+  border-color: $secondary-color !important;
+}
+.highlight-font-family{
+	@extend %highlight-font-family;
+}
+
+.heading-font-family{
+  @extend %heading-font-family;
+}
+.socials-color{
+  a{
+    background-color: $border-color;
+    &:hover{
+      background-color: $primary-color;
+    }
+  }
+}
+
+.first-letter-primary::first-letter {
+  color: $primary-color;
+}
+
+
+/*--------------------------------------------------------------
+	 @Package: Optima SASS
+	 @File: scss/fullpage/_fullpage.scss
+---------------------------------------------------------------*/
+
+.searchform-fly-overlay{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+  background-color: rgba(0,0,0,.94);
+  text-align: center;
+  transition: all ease-in-out .25s;
+  z-index: 999;
+  &:before{
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    margin-right: -.25em;
+  }
+  .searchform-fly{
+    display: inline-block;
+    max-width: 90%;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 18px;
+    -webkit-transform: scale(.9);
+    -ms-transform: scale(.9);
+    transform: scale(.9);
+    ms-transform: scale(.9);
+    opacity: 0;
+    visibility: hidden;
+    transition: all ease-in-out .3s;
+  }
+  .search-field{
+    width: 800px;
+    background-color: transparent;
+    box-shadow: 0 3px 0 0 rgba(255,255,255,.1);
+    border: 0;
+    text-align: center;
+    font-size: 35px;
+    padding: 20px;
+    color: rgba(#fff,.8);
+    transition: all .3s ease-out;
+    font-weight: 300;
+    max-width: 100%;
+  }
+  .search-button{
+    color: rgba(#fff,.8);
+    font-size: 30px;
+    height: 30px;
+  }
+  p{
+    text-transform: uppercase;
+    color: rgba(#fff,.8);
+    font-weight: 300;
+  }
+  .btn-close-search{
+    font-size: 40px;
+    display: block;
+    position: absolute;
+    top: 20%;
+    right: 20%;
+    line-height: 40px;
+    height: 40px;
+    &:hover{
+      -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+      transform: rotate(90deg);
+      ms-transform: rotate(90deg);
+    }
+  }
+}
+.open-search-form{
+  .searchform-fly-overlay{
+    visibility: visible;
+    opacity: 1;
+  }
+  .searchform-fly{
+    visibility: visible;
+    opacity: 1;
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    ms-transform: scale(1);
+  }
+}@media (max-width: 768px) {
+  .searchform-fly-overlay{
+    .btn-close-search{
+      right: 10%;
+    }
+    .searchform-fly{
+      font-size: 16px;
+    }
+    .search-field{
+      font-size: 30px;
+    }
+  }
+}
+
+/*--------------------------------------------------------------
+	 @Package: Optima SASS
+	 @File: scss/_colors.scss
+---------------------------------------------------------------*/
+@import "colors";
+/*--------------------------------------------------------------
+	 @Package: Optima SASS
+	 @File: scss/_responsive.scss
+---------------------------------------------------------------*/

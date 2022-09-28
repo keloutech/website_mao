@@ -1,0 +1,119 @@
+.section-page-header{
+  border-top: 1px solid $border-color;
+  border-bottom: 1px solid $border-color;
+  .page-title-v1 & {
+    text-align: center;
+  }
+  .page-title-v11 & {
+    text-align: center;
+  }
+  .page-title-v2 & {
+    text-align: left;
+  }
+  .page-title-v3 & {
+    text-align: right;
+  }
+}
+
+.page-title-v11,
+.page-title-v1{
+  .section-page-header{
+    border: none;
+    .page-title{
+      font-size: 45px;
+    }
+  }
+}
+
+.page-title-v4,
+.page-title-v5{
+  .section-page-header{
+    .col-xs-12{
+      display: table;
+      position: relative;
+    }
+    header,
+    .la-breadcrumbs{
+      display: table-cell;
+      vertical-align: middle;
+      position: relative;
+    }
+  }
+}
+.page-title-v4{
+  .section-page-header{
+    .la-breadcrumbs{
+      text-align: $global-right;
+    }
+  }
+}
+.page-title-v5{
+  .section-page-header {
+    header {
+      text-align: $global-right;
+    }
+  }
+}
+.page-title-v11{
+  .section-page-header{
+    .page-header-inner{
+      position: relative;
+      .col-xs-12{
+        position: static;
+      }
+    }
+    .la-breadcrumbs{
+      position: absolute;
+      bottom: 20px;
+      left: 0;
+      width: 100%;
+    }
+  }
+}
+.page-header-inner {
+  padding: 40px 0;
+}
+.la-breadcrumbs{
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 600;
+  .la-breadcrumb-item{
+    display: inline-block;
+  }
+  .la-breadcrumb-item-sep{
+    margin: 0 5px;
+    i{
+      font-size: 5px;
+      vertical-align: middle;
+    }
+  }
+}
+
+
+.container {
+  max-width: 100%;
+}
+
+#page.site{
+  min-height: 300px;
+  position: relative;
+}
+
+.site-main{
+  min-height: 200px;
+  padding-top: 70px;
+  padding-bottom: 30px;
+  .woocommerce-page &{
+    padding-top: 50px;
+    min-height: 50vh;
+  }
+}
+
+.enable-main-fullwidth{
+  .section-page-header .container,
+  .wc-toolbar-container .container,
+  .site-main .container {
+    width: 100%;
+  }
+}

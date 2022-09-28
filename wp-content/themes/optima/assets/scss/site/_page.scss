@@ -1,0 +1,207 @@
+.demo-item{
+  .demo-item-inner{
+    margin-bottom: 40px;
+    .item--holder{
+      background: rgba(#2b2c30, 0.9);
+    }
+    .btn{
+      background: #ffffff;
+      text-align: center;
+      color: #2b2c30;
+      border: none;
+      width: 170px;
+      padding: 10px 20px;
+      line-height: 20px;
+      @extend %absolute-center;
+    }
+  }
+  .item-image{
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 12px 1px rgba(0, 0, 0, 0.1), 0 0 30px rgba(0, 0, 0, 0.07);
+    -webkit-box-shadow: 0 0 12px 1px rgba(0, 0, 0, 0.1), 0 0 30px rgba(0, 0, 0, 0.07);
+  }
+  .item--info{
+    text-align: center;
+  }
+}
+.page-title-voff .section-page-header,
+.page-title-vhide .section-page-header {
+  display: none;
+}
+
+.error404{
+  .site-main{
+    min-height: 80vh;
+    background: url(assets/images/404-bg.jpg) no-repeat center center;
+    background-size: cover;
+  }
+  .default-404-content{
+    max-width: 770px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 30%;
+    padding-bottom: 25%;
+    color: #fff;
+    h1{
+      font-size: 70px;
+      color: #fff;
+      margin-bottom: 40px;
+    }
+    p{
+      font-size: 18px;
+    }
+    .btn-wrapper{
+      margin-top: 60px;
+      .la-btn{
+        text-transform: uppercase;
+        padding: 9px 30px;
+        &:not(:hover){
+          border-color: rgba(#fff,0.4);
+        }
+      }
+    }
+  }
+}
+/**
+For demo
+*/
+.home-09-box-icon.la-sc-icon-boxes .box-description {
+  padding-top: 0;
+}
+.home-09-box-icon.la-sc-icon-boxes .box-icon-left{
+  padding-top: 5px;
+}
+.home-09-big-banner {
+  &.la-banner-box.wpb_content_element{
+    margin-bottom: 0;
+  }
+  .banner--link-overlay:after{
+    border: none;
+  }
+  .subheading-tag {
+    font-size: 50px;
+    text-transform: uppercase;
+    line-height: normal;
+    letter-spacing: -1px;
+    span{
+      display: inline-block;
+      text-decoration: none !important;
+      &:after{
+        content: "";
+        border-bottom: 3px solid $primary-color;
+        display: block;
+        margin-top: -13px;
+        width: 100%;
+      }
+    }
+  }
+}
+.la-btn.la-btn-style-outline.home-09-btn-outline {
+  font-size: 24px;
+  border-width: 2px;
+  padding: 13px 20px;
+  width: 100%;
+  max-width: 250px;
+}
+.home-09-custom-heading{
+  display: inline-block;
+  &:after{
+    content: "";
+    border-bottom: 3px solid $primary-color;
+    display: block;
+    margin-top: -8px;
+    width: 100%;
+  }
+}
+.la-banner-box.home-09-banner-type-2{
+  .banner--info{
+    pointer-events: none;
+    z-index: 2;
+    left: 10%;
+    bottom: 10%;
+  }
+  .subheading-tag{
+    .h3{
+      margin: 0 0 5px;
+      color: inherit;
+      text-transform: uppercase;
+    }
+  }
+  .banner--link-overlay{
+    &:after{
+      background-color: $secondary-color;
+      border: none;
+      opacity: 0.6;
+      @include transform(none);
+    }
+    &:before{
+      content: "";
+      border-left: 90px solid transparent;
+      border-bottom: 50px solid $primary-color;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      z-index: 2;
+    }
+  }
+  &:hover{
+    .banner--link-overlay{
+      &:after{
+        opacity: 0.2;
+        @include transform(none);
+      }
+    }
+  }
+}
+
+.ribbon-callnow {
+  max-width: 740px;
+  margin: 0 auto;
+  background: $primary-color;
+  text-align: center;
+  color: #fff;
+  font-size: 50px;
+  display: block;
+  width: 100%;
+  position: relative;
+  padding: 0 40px;
+  min-height: 90px;
+  left: -20px;
+  &:before{
+    content: "";
+    position: absolute;
+    border-top: 45px solid transparent;
+    border-bottom: 45px solid transparent;
+    border-left: 40px solid #fff;
+    left: 0;
+    top: 0;
+  }
+  &:after{
+    content: "";
+    position: absolute;
+    border-top: 45px solid $primary-color;
+    border-bottom: 45px solid $primary-color;
+    border-right: 40px solid transparent;
+    right: -40px;
+    top: 0;
+  }
+  .callnow-label {
+    font-family: $highlight-font-family;
+    font-weight: 100;
+    font-size: 80%;
+    display: inline-block;
+  }
+  .callnow-phone {
+    display: inline-block;
+  }
+}
+
+.column-maxwidth-650{
+  >.vc_column-inner{
+    max-width: 650px;
+  }
+}
+.furniture-custom-column-banner .vc_column-inner > .wpb_wrapper {
+  max-width: 500px;
+}

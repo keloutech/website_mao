@@ -1,0 +1,165 @@
+/*********************************************************************
+* Modernizr 2.6.2 (Custom Build) | MIT & BSD
+* Build: http://modernizr.com/download/#-cssanimations-csstransitions-touch-shiv-cssclasses-prefixed-teststyles-testprop-testallprops-prefixes-domprefixes-load
+*********************************************************************/
+
+/*********************************************************************
+*  #### Twitter Post Fetcher v16.0.3 ####
+*  Coded by Jason Mayes 2015. A present to all the developers out there.
+*  www.jasonmayes.com
+*  Please keep this disclaimer with my code if you use it. Thanks. :-)
+*  Got feedback or questions, ask here:
+*  http://www.jasonmayes.com/projects/twitterApi/
+*  Github: https://github.com/jasonmayes/Twitter-Post-Fetcher
+*  Updates will be posted to this site.
+*********************************************************************/
+
+/*********************************************************************
+* Lightcase - jQuery Plugin
+* The smart and flexible Lightbox Plugin.
+*
+* @author		Cornel Boppart <cornel@bopp-art.com>
+* @copyright	Author
+*
+* @version		2.3.4 (29/12/2015)
+*********************************************************************/
+
+/*********************************************************************
+* @name        EasyZoom
+* @author      Matt Hinchliffe <>
+* @modified    Monday, April 18th, 2016
+* @version     2.4.0
+*********************************************************************/
+
+/*********************************************************************
+* imagesLoaded PACKAGED v4.1.0
+* JavaScript is all like "You images are done yet or what?"
+* MIT License
+*********************************************************************/
+
+/*********************************************************************
+--------------------------------
+Infinite Scroll
+--------------------------------
++ https://github.com/paulirish/infinite-scroll
++ version 2.1.0
++ Copyright 2011/12 Paul Irish & Luke Shumard
++ Licensed under the MIT license
+
++ Documentation: http://infinite-scroll.com/
+*********************************************************************/
+
+/*********************************************************************
+* Isotope PACKAGED v3.0.1
+*
+* Licensed GPLv3 for open source use
+* or Isotope Commercial License for commercial use
+*
+* http://isotope.metafizzy.co
+* Copyright 2016 Metafizzy
+*********************************************************************/
+
+/*********************************************************************
+* Packery layout mode PACKAGED v2.0.0
+* sub-classes Packery
+*********************************************************************/
+
+/*********************************************************************
+/*!
+* JavaScript Cookie v2.0.4
+* https://github.com/js-cookie/js-cookie
+*
+* Copyright 2006, 2015 Klaus Hartl & Fagner Brack
+* Released under the MIT license
+*/
+*********************************************************************/
+
+/*********************************************************************
+* Slick Slider
+* Version: 1.6.0
+* Author: Ken Wheeler
+* Website: http://kenwheeler.github.io
+* Docs: http://kenwheeler.github.io/slick
+* Repo: http://github.com/kenwheeler/slick
+* Issues: http://github.com/kenwheeler/slick/issues
+*********************************************************************/
+
+/*********************************************************************
+* jQuery appear plugin
+*
+* Copyright (c) 2012 Andrey Sidorov
+* licensed under MIT license.
+*
+* https://github.com/morr/jquery.appear/
+*
+* Version: 0.3.6
+*********************************************************************/
+
+/*********************************************************************
+/*
+countUp.js
+by @inorganik
+*/
+*********************************************************************/
+
+/*********************************************************************
+/** Abstract base class for collection plugins v1.0.1.
+Written by Keith Wood (kbwood{at}iinet.com.au) December 2013.
+Licensed under the MIT (http://keith-wood.name/licence.html) license. */
+*********************************************************************/
+
+/*********************************************************************
+/* http://keith-wood.name/countdown.html
+Countdown for jQuery v2.0.2.
+Written by Keith Wood (kbwood{at}iinet.com.au) January 2008.
+Available under the MIT (http://keith-wood.name/licence.html) license.
+Please attribute the author if you use it. */
+*********************************************************************/
+
+/*********************************************************************
+/**
+ * Copyright Marc J. Schmidt. See the LICENSE file at the top-level
+ * directory of this distribution and at
+ * https://github.com/marcj/css-element-queries/blob/master/LICENSE.
+ */
+;
+/*!
+ * Theia Sticky Sidebar v1.6.0
+ * https://github.com/WeCodePixels/theia-sticky-sidebar
+ *
+ * Glues your website's sidebars, making them permanently visible while scrolling.
+ *
+ * Copyright 2013-2016 WeCodePixels and other contributors
+ * Released under the MIT license
+ */
+*********************************************************************/
+
+/*********************************************************************
+*jquery-circle-progress
+*********************************************************************/
+
+/*********************************************************************
+/*
+jQuery Waypoints - v2.0.2
+Copyright (c) 2011-2013 Caleb Troughton
+Dual licensed under the MIT license and GPL license.
+https://github.com/imakewebthings/jquery-waypoints/blob/master/licenses.txt
+*/
+*********************************************************************/
+
+/*********************************************************************
+skrollr 0.6.30 (2015-06-19) | Alexander Prinzhorn - https://github.com/Prinzhorn/skrollr | Free to use under terms of MIT license
+*********************************************************************/
+
+/*********************************************************************
+/**
+ * jquery.dlmenu.js v1.0.1
+ * http://www.codrops.com
+ *
+ * Licensed under the MIT license.
+ * http://www.opensource.org/licenses/mit-license.php
+ *
+ * Copyright 2013, Codrops
+ * http://www.codrops.com
+ */
+*********************************************************************/

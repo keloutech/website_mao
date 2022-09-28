@@ -1,0 +1,326 @@
+.la-separator{
+  margin: 0;
+  padding: 0;
+  position: relative;
+  overflow: hidden;
+  .la-line{
+    display: block;
+    max-width: 100%;
+    width: 100px;
+    .text-center & {
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .text-right & {
+      margin-right: 0;
+      margin-left: auto;
+    }
+    .text-left & {
+      margin-left: 0;
+      margin-right: auto;
+    }
+  }
+}
+.la-headings{
+  margin-bottom: 15px;
+  background:{
+    position: top center;
+    repeat: no-repeat;
+  }
+  .heading-tag{
+    margin-bottom: 5px;
+  }
+  .la-separator{
+    margin-top: 20px;
+  }
+  .la-line{
+    border-style: solid;
+    border-width: 1px;
+    border-color: $primary-color;
+    width: 30px;
+  }
+  &.text-inline{
+    .heading-tag,
+    .subheading-tag{
+      display: inline-block;
+      margin: 0;
+    }
+  }
+}
+.spacer-position-separator{
+  .heading-with-line,
+  .la-separator,
+  .heading-tag{
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .heading-tag{
+    margin: 0 20px;
+  }
+}
+.subheading-tag sup,
+.subheading-tag sub {
+  font-size: 100%;
+}
+.heading-with-number{
+  font-weight: bold;
+  .heading-tag,
+  .heading-number{
+    display: table-cell;
+  }
+  .heading-number{
+    font-size: 72px;
+    line-height: 1;
+  }
+}
+
+
+.icon-heading.heading-with-line:after {
+  display: block;
+  width: 50px;
+  border-top: 2px solid $primary-color;
+  content: "";
+  margin-right: auto;
+  margin-left: 0;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  .text-center & {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .text-right &{
+    margin-right: 0;
+    margin-left: auto;
+  }
+}
+
+.custom-heading-with-dots{
+  .la-headings{
+    position: relative;
+    &:before{
+      content: "";
+      width: 20px;
+      height: 20px;
+      background-color: $primary-color;
+      position: absolute;
+      left: 0;
+      top: 2px;
+      @extend %radius-50;
+    }
+    .heading-tag{
+      font-size: 20px;
+      color: #fff;
+      margin-top: 0;
+      margin-bottom: 20px;
+    }
+    .subheading-tag{
+      font-size: 10px;
+      letter-spacing: 2px;
+      color: #fff;
+      font-weight: 300;
+      padding-bottom: 5px;
+      @extend %heading-font-family;
+    }
+  }
+  .wpb_text_column{
+    color: #fff;
+    line-height: 30px;
+  }
+  .wpb_text_column,
+  .la-headings {
+    padding-left: 50px;
+    max-width: 380px;
+  }
+
+}
+
+.la-headings.intro-heading .la-separator {
+  margin-top: 35px;
+  margin-bottom: 30px;
+}
+.la-headings.intro-heading p {
+  padding-bottom: 10px;
+}
+
+.hover-heading-box-home-1{
+  &.wpb_column{
+    &:before{
+      content: "";
+      position: absolute;
+      @extend %left-top-bottom-right-0;
+      @include transition(all .3s ease);
+    }
+    .la-headings{
+      position: relative;
+      max-width: 770px;
+      margin: 0 auto;
+      padding: 70px 30px 40px;
+      @include transition(all .3s ease);
+      .heading-tag{
+        color: #fff;
+        padding-bottom: 15px;
+      }
+      .subheading-tag{
+        color: #fff;
+        position: relative;
+        padding-bottom: 80px;
+        a{
+          position: absolute;
+          background-color: #fff;
+          display: block;
+          color: #343538;
+          text-align: center;
+          width: 220px;
+          line-height: 30px;
+          padding: 10px 20px;
+          max-width: 100%;
+          font-size: 12px;
+          text-transform: uppercase;
+          bottom: 0;
+          visibility: hidden;
+          opacity: 0;
+          left: 50%;
+          margin-left: -110px;
+          @extend %heading-font-family;
+          &:hover{
+            color: #fff;
+            background-color: #343538;
+          }
+        }
+      }
+    }
+    &:hover{
+      &:before{
+        background-color: $primary-color;
+      }
+      .la-headings{
+        @include translate2d(0, -50px);
+        .subheading-tag{
+          a{
+            visibility: visible;
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+}
+
+.hover-heading-box{
+  &.wpb_column{
+    &:before{
+      content: "";
+      position: absolute;
+      background-color: #25272e;
+      @extend %left-top-bottom-right-0;
+      @include opacity(0.8);
+      @include transition(all .3s ease);
+    }
+    .la-headings{
+      position: relative;
+      max-width: 320px;
+      margin: 0 auto;
+      padding: 70px 30px 40px;
+      @include transition(all .3s ease);
+      .heading-tag{
+        font-weight: 300;
+        color: #fff;
+        padding-bottom: 15px;
+        margin-top: 0;
+        line-height: normal;
+      }
+      .subheading-tag{
+        color: #fff;
+        position: relative;
+        padding-bottom: 80px;
+        a{
+          position: absolute;
+          background-color: #fff;
+          display: block;
+          color: #343538;
+          text-align: center;
+          width: 220px;
+          line-height: 30px;
+          padding: 10px 20px;
+          max-width: 100%;
+          font-size: 12px;
+          text-transform: uppercase;
+          bottom: 0;
+          visibility: hidden;
+          opacity: 0;
+          @extend %heading-font-family;
+          &:hover{
+            color: #fff;
+            background-color: #343538;
+          }
+        }
+      }
+    }
+    &:hover{
+      &:before{
+        background-color: $primary-color;
+      }
+      .la-headings{
+        @include translate2d(0, -50px);
+        .subheading-tag{
+          a{
+            visibility: visible;
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+}
+
+.heading-with-narrow-bg {
+  background-position: center bottom !important;
+  padding-bottom: 20px;
+}
+
+.la-headings.health-heading-boxed {
+  border-width: 1px;
+  border-style: solid;
+  border-color: #fff #fff transparent #fff;
+  position: relative;
+  display: inline-block;
+  padding: 0 8%;
+  margin-bottom: 55px;
+  &:after,
+  &:before{
+    content: "";
+    width: 50px;
+    position: absolute;
+    top: 100%;
+    border-top: inherit;
+    left: 0;
+  }
+  &:after{
+    right: 0;
+    left: auto;
+  }
+  .heading-tag{
+    margin: 20px 0;
+  }
+  .subheading-tag{
+    position: absolute;
+    top: 88%;
+    left: 0;
+    width: 100%;
+    font-weight: 300;
+    padding-left: 12%;
+    padding-right: 12%;
+  }
+  &.big-border{
+    border-width: 5px;
+    .heading-tag{
+      margin: 30px 0;
+    }
+    &:after{
+      right: -5px;
+    }
+    &:before{
+      left: -5px;
+    }
+  }
+}

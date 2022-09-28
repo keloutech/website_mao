@@ -1,0 +1,277 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Wpxon Blog v1.0.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2018-12-31 20:37:36+0000\n"
+"Last-Translator: test <test@test.com>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: CSL v1.x\n"
+"X-Poedit-Language: English\n"
+"X-Poedit-Country: UNITED STATES\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;\n"
+"X-Poedit-Basepath: ../\n"
+"X-Poedit-Bookmarks: \n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Textdomain-Support: yes"
+
+#: 404.php:17
+#@ wpxon-blog
+msgid "Not Found"
+msgstr ""
+
+#: 404.php:23
+#@ wpxon-blog
+msgid "Oops! That page can&rsquo;t be found."
+msgstr ""
+
+#: 404.php:26
+#@ wpxon-blog
+msgid "It looks like nothing was found at this location. Maybe try a search?"
+msgstr ""
+
+#. translators: 1: title.
+#: comments.php:32
+#, php-format
+#@ wpxon-blog
+msgid "%1$s Comment"
+msgstr ""
+
+#. translators: 1: comment count number, 2: title.
+#: comments.php:38
+#, php-format
+#@ wpxon-blog
+msgctxt "comments title"
+msgid "%1$s Comments"
+msgid_plural "%1$s Comments"
+msgstr[0] ""
+msgstr[1] ""
+
+#: comments.php:58
+#@ wpxon-blog
+msgid "Comments are closed."
+msgstr ""
+
+#: functions.php:34
+#@ wpxon-blog
+msgid "Main Menu"
+msgstr ""
+
+#: functions.php:35
+#@ wpxon-blog
+msgid "Mobile Menu"
+msgstr ""
+
+#: functions.php:87
+#@ wpxon-blog
+msgid "Sidebar"
+msgstr ""
+
+#: functions.php:89
+#@ wpxon-blog
+msgid "Add widgets here."
+msgstr ""
+
+#: functions.php:105
+#@ wpxon-blog
+msgctxt "Playfair Display font: on or off"
+msgid "on"
+msgstr ""
+
+#: functions.php:109
+#@ wpxon-blog
+msgctxt "Poppins font: on or off"
+msgid "on"
+msgstr ""
+
+#: header.php:52
+#@ wpxon-blog
+msgid "Home"
+msgstr ""
+
+#: inc/customizer.php:17
+#@ wpxon-blog
+msgid "Footer Settings"
+msgstr ""
+
+#: inc/customizer.php:26
+#@ wpxon-blog
+msgid "Copyright Text"
+msgstr ""
+
+#: inc/customizer.php:30
+#@ wpxon-blog
+msgid "Write copyright text here."
+msgstr ""
+
+#: inc/extras.php:139
+#@ wpxon-blog
+msgid "&nbsp;"
+msgstr ""
+
+#: inc/extras.php:141
+#@ wpxon-blog
+msgid "Post Comment"
+msgstr ""
+
+#: inc/extras.php:151
+#@ wpxon-blog
+msgid "Submit"
+msgstr ""
+
+#: inc/extras.php:214
+#@ wpxon-blog
+msgid "ADD MENU"
+msgstr ""
+
+#: inc/extras.php:241
+#@ wpxon-blog
+msgid "Copyright &copy; 2019 "
+msgstr ""
+
+#: inc/extras.php:245
+#@ wpxon-blog
+msgid "Wpxon"
+msgstr ""
+
+#: inc/extras.php:253
+#@ wpxon-blog
+msgid "Blog"
+msgstr ""
+
+#: inc/extras.php:280
+#@ wpxon-blog
+msgid "404 Not Found"
+msgstr ""
+
+#. translators: %s: post date.
+#: inc/template-tags.php:26
+#, php-format
+#@ wpxon-blog
+msgctxt "post date"
+msgid "Posted on %s"
+msgstr ""
+
+#. translators: %s: post author.
+#: inc/template-tags.php:39
+#, php-format
+#@ wpxon-blog
+msgctxt "post author"
+msgid "by %s"
+msgstr ""
+
+#. translators: used between list items, there is a space after the comma
+#: inc/template-tags.php:53
+#@ wpxon-blog
+msgid ", "
+msgstr ""
+
+#. translators: 1: list of categories.
+#: inc/template-tags.php:56
+#, php-format
+#@ wpxon-blog
+msgid "Posted in %1$s"
+msgstr ""
+
+#. translators: used between list items, there is a space after the comma
+#: inc/template-tags.php:59
+#@ wpxon-blog
+msgctxt "list item separator"
+msgid ", "
+msgstr ""
+
+#. translators: 1: list of tags.
+#: inc/template-tags.php:62
+#, php-format
+#@ wpxon-blog
+msgid "Tagged %1$s"
+msgstr ""
+
+#. translators: %s: post title
+#: inc/template-tags.php:71
+#, php-format
+#@ wpxon-blog
+msgid "Leave a Comment<span class=\"screen-reader-text\"> on %s</span>"
+msgstr ""
+
+#. translators: %s: Name of current post. Only visible to screen readers
+#: inc/template-tags.php:87
+#: template-parts/content-page.php:28
+#, php-format
+#@ wpxon-blog
+msgid "Edit <span class=\"screen-reader-text\">%s</span>"
+msgstr ""
+
+#: single.php:31
+#: template-parts/content-blog.php:25
+#: template-parts/content.php:25
+#: template-parts/tmp-post-box-width.php:32
+#: template-parts/tmp-post-left-sidebar.php:37
+#@ wpxon-blog
+msgid "by"
+msgstr ""
+
+#: single.php:38
+#: template-parts/content-page.php:16
+#: template-parts/tmp-post-box-width.php:39
+#: template-parts/tmp-post-left-sidebar.php:44
+#@ wpxon-blog
+msgid "Pages:"
+msgstr ""
+
+#: single.php:48
+#: template-parts/tmp-post-box-width.php:49
+#: template-parts/tmp-post-left-sidebar.php:54
+#, php-format
+#@ wpxon-blog
+msgctxt "Parent post link"
+msgid "<span class=\"meta-nav\">Published in</span><span class=\"post-title\">%title</span>"
+msgstr ""
+
+#: single.php:53
+#: template-parts/tmp-post-box-width.php:54
+#: template-parts/tmp-post-left-sidebar.php:59
+#@ wpxon-blog
+msgid "Next - "
+msgstr ""
+
+#: single.php:55
+#: template-parts/tmp-post-box-width.php:56
+#: template-parts/tmp-post-left-sidebar.php:61
+#@ wpxon-blog
+msgid "Previous - "
+msgstr ""
+
+#: template-parts/content-blog.php:36
+#: template-parts/content.php:36
+#@ wpxon-blog
+msgid "Read More"
+msgstr ""
+
+#: template-parts/content-none.php:12
+#@ wpxon-blog
+msgid "Nothing Found"
+msgstr ""
+
+#. translators: 1: link to WP admin new post page.
+#: template-parts/content-none.php:20
+#, php-format
+#@ wpxon-blog
+msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+
+#: template-parts/content-none.php:31
+#@ wpxon-blog
+msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
+msgstr ""
+
+#: template-parts/content-none.php:36
+#@ wpxon-blog
+msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
+msgstr ""
+
